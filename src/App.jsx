@@ -483,6 +483,132 @@ export default function App() {
 
         </div>
       </section>
+      {/* CASE STUDIES */}
+<section
+  id="case-studies"
+  className="relative max-w-7xl mx-auto px-6 py-28"
+>
+
+  <div className="text-center mb-16">
+    <p className="text-cyan-400 font-semibold tracking-widest uppercase">
+      Demo Prototypes
+    </p>
+
+    <h2 className="text-5xl font-bold mt-4">
+      Example AI Workflows &
+      <span className="text-cyan-400"> Case Studies</span>
+    </h2>
+
+    <p className="text-gray-400 max-w-3xl mx-auto mt-6 text-lg">
+      Real-world automation systems designed to reduce manual work,
+      improve response times, and increase customer conversions.
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-3 gap-8">
+
+    {/* CASE 1 */}
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-cyan-400/40 hover:scale-105 transition duration-300">
+
+      <div className="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-3xl mb-6">
+        🤖
+      </div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        AI Customer Support Bot
+      </h3>
+
+      <p className="text-gray-400 leading-relaxed mb-6">
+        Automated website chatbot that instantly answers FAQs,
+        qualifies leads, and books consultations 24/7.
+      </p>
+
+      <div className="space-y-3 text-sm text-gray-300">
+
+        <div className="flex items-center gap-2">
+          ✅ Instant lead qualification
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ WhatsApp integration
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ CRM synchronization
+        </div>
+
+      </div>
+    </div>
+
+    {/* CASE 2 */}
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-purple-400/40 hover:scale-105 transition duration-300">
+
+      <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-3xl mb-6">
+        ⚡
+      </div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Automated Quote Workflow
+      </h3>
+
+      <p className="text-gray-400 leading-relaxed mb-6">
+        Smart workflow that collects customer requirements,
+        generates quotations, and sends automated follow-ups.
+      </p>
+
+      <div className="space-y-3 text-sm text-gray-300">
+
+        <div className="flex items-center gap-2">
+          ✅ Instant quote requests
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ Automated email replies
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ Lead tracking dashboard
+        </div>
+
+      </div>
+    </div>
+
+    {/* CASE 3 */}
+    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-blue-400/40 hover:scale-105 transition duration-300">
+
+      <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center text-3xl mb-6">
+        📈
+      </div>
+
+      <h3 className="text-2xl font-bold mb-4">
+        Social Media AI Assistant
+      </h3>
+
+      <p className="text-gray-400 leading-relaxed mb-6">
+        AI-powered assistant that manages inquiries,
+        captures leads, and automates responses from social media.
+      </p>
+
+      <div className="space-y-3 text-sm text-gray-300">
+
+        <div className="flex items-center gap-2">
+          ✅ Facebook automation
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ Instagram lead capture
+        </div>
+
+        <div className="flex items-center gap-2">
+          ✅ CRM integrations
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
 
 {/* FOOTER */}
 <footer className="relative border-t border-white/10 bg-black/30 backdrop-blur-xl mt-32">
@@ -612,132 +738,7 @@ export default function App() {
     </div>
 
   </div>
-{/* CASE STUDIES */}
-<section
-  id="case-studies"
-  className="relative max-w-7xl mx-auto px-6 py-28"
->
 
-  <div className="text-center mb-16">
-    <p className="text-cyan-400 font-semibold tracking-widest uppercase">
-      Demo Prototypes
-    </p>
-
-    <h2 className="text-5xl font-bold mt-4">
-      Example AI Workflows &
-      <span className="text-cyan-400"> Case Studies</span>
-    </h2>
-
-    <p className="text-gray-400 max-w-3xl mx-auto mt-6 text-lg">
-      Real-world automation systems designed to reduce manual work,
-      improve response times, and increase customer conversions.
-    </p>
-  </div>
-
-  <div className="grid md:grid-cols-3 gap-8">
-
-    {/* CASE 1 */}
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-cyan-400/40 hover:scale-105 transition duration-300">
-
-      <div className="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-3xl mb-6">
-        🤖
-      </div>
-
-      <h3 className="text-2xl font-bold mb-4">
-        AI Customer Support Bot
-      </h3>
-
-      <p className="text-gray-400 leading-relaxed mb-6">
-        Automated website chatbot that instantly answers FAQs,
-        qualifies leads, and books consultations 24/7.
-      </p>
-
-      <div className="space-y-3 text-sm text-gray-300">
-
-        <div className="flex items-center gap-2">
-          ✅ Instant lead qualification
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ WhatsApp integration
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ CRM synchronization
-        </div>
-
-      </div>
-    </div>
-
-    {/* CASE 2 */}
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-purple-400/40 hover:scale-105 transition duration-300">
-
-      <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-3xl mb-6">
-        ⚡
-      </div>
-
-      <h3 className="text-2xl font-bold mb-4">
-        Automated Quote Workflow
-      </h3>
-
-      <p className="text-gray-400 leading-relaxed mb-6">
-        Smart workflow that collects customer requirements,
-        generates quotations, and sends automated follow-ups.
-      </p>
-
-      <div className="space-y-3 text-sm text-gray-300">
-
-        <div className="flex items-center gap-2">
-          ✅ Instant quote requests
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ Automated email replies
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ Lead tracking dashboard
-        </div>
-
-      </div>
-    </div>
-
-    {/* CASE 3 */}
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:border-blue-400/40 hover:scale-105 transition duration-300">
-
-      <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center text-3xl mb-6">
-        📈
-      </div>
-
-      <h3 className="text-2xl font-bold mb-4">
-        Social Media AI Assistant
-      </h3>
-
-      <p className="text-gray-400 leading-relaxed mb-6">
-        AI-powered assistant that manages inquiries,
-        captures leads, and automates responses from social media.
-      </p>
-
-      <div className="space-y-3 text-sm text-gray-300">
-
-        <div className="flex items-center gap-2">
-          ✅ Facebook automation
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ Instagram lead capture
-        </div>
-
-        <div className="flex items-center gap-2">
-          ✅ CRM integrations
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-
-</section>
 </footer>
 {/* WhatsApp Button */}
 <a
