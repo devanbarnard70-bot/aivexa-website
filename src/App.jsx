@@ -541,6 +541,19 @@ export default function App() {
 
           <a href="#contact" className="hover:text-cyan-400 transition">
             Contact
+            <a
+  href="/privacy"
+  className="hover:text-cyan-400 transition"
+>
+  Privacy Policy
+</a>
+
+<a
+  href="/terms"
+  className="hover:text-cyan-400 transition"
+>
+  Terms of Service
+</a>
           </a>
 
         </div>
