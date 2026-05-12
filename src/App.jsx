@@ -523,41 +523,51 @@ export default function App() {
         </div>
       </div>
 
-      {/* Quick Links */}
-      <div>
-        <h3 className="text-xl font-semibold mb-6">
-          Quick Links
-        </h3>
+    {/* Quick Links */}
+<div>
+  <h3 className="text-xl font-semibold mb-6">
+    Quick Links
+  </h3>
 
-        <div className="flex flex-col gap-4 text-gray-400">
+  <div className="flex flex-col gap-4 text-gray-400">
 
-          <a href="#services" className="hover:text-cyan-400 transition">
-            Services
-          </a>
+    <a
+      href="#services"
+      className="hover:text-cyan-400 transition"
+    >
+      Services
+    </a>
 
-          <a href="#about" className="hover:text-cyan-400 transition">
-            About
-          </a>
+    <a
+      href="#about"
+      className="hover:text-cyan-400 transition"
+    >
+      About
+    </a>
 
-          <a href="#contact" className="hover:text-cyan-400 transition">
-            Contact
-            <a
-  href="/privacy"
-  className="hover:text-cyan-400 transition"
->
-  Privacy Policy
-</a>
+    <a
+      href="#contact"
+      className="hover:text-cyan-400 transition"
+    >
+      Contact
+    </a>
 
-<a
-  href="/terms"
-  className="hover:text-cyan-400 transition"
->
-  Terms of Service
-</a>
-          </a>
+    <a
+      href="/privacy"
+      className="hover:text-cyan-400 transition"
+    >
+      Privacy Policy
+    </a>
 
-        </div>
-      </div>
+    <a
+      href="/terms"
+      className="hover:text-cyan-400 transition"
+    >
+      Terms of Service
+    </a>
+
+  </div>
+</div>
 
       {/* Contact */}
       <div>
