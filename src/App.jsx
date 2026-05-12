@@ -484,51 +484,109 @@ export default function App() {
         </div>
       </section>
 
-      {/* FOOTER */}
-<footer className="relative border-t border-white/10 py-10 px-8">
+{/* FOOTER */}
+<footer className="relative border-t border-white/10 bg-black/30 backdrop-blur-xl mt-32">
 
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+  <div className="max-w-7xl mx-auto px-6 py-16">
 
-    <div className="flex items-center gap-3">
+    <div className="grid md:grid-cols-3 gap-12">
 
-      <img
-        src="/logo.png"
-        alt="Aivexa Logo"
-        className="w-10 h-10 object-contain"
-      />
-
+      {/* Brand */}
       <div>
-        <h3 className="font-bold text-cyan-400">
+        <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
           AIVEXA
+        </h2>
+
+        <p className="text-gray-400 mt-4 leading-relaxed">
+          AI automation systems designed to help businesses scale faster,
+          automate conversations, generate leads, and improve customer experience.
+        </p>
+
+        <div className="flex gap-4 mt-6">
+
+          <a
+            href="https://linkedin.com/company/officialaivexa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition p-3 rounded-xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.3V24h-4v-7.4c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8z"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+      {/* Quick Links */}
+      <div>
+        <h3 className="text-xl font-semibold mb-6">
+          Quick Links
         </h3>
 
-        <p className="text-sm text-gray-500">
-          AI Automation Agency
-        </p>
+        <div className="flex flex-col gap-4 text-gray-400">
+
+          <a href="#services" className="hover:text-cyan-400 transition">
+            Services
+          </a>
+
+          <a href="#about" className="hover:text-cyan-400 transition">
+            About
+          </a>
+
+          <a href="#contact" className="hover:text-cyan-400 transition">
+            Contact
+          </a>
+
+        </div>
+      </div>
+
+      {/* Contact */}
+      <div>
+        <h3 className="text-xl font-semibold mb-6">
+          Contact
+        </h3>
+
+        <div className="flex flex-col gap-4 text-gray-400">
+
+          <a
+            href="mailto:officalaivexa@outlook.com"
+            className="hover:text-cyan-400 transition"
+          >
+            officalaivexa@outlook.com
+          </a>
+
+          <a
+            href="https://linkedin.com/company/officialaivexa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-cyan-400 transition"
+          >
+            LinkedIn: Officialaivexa
+          </a>
+
+        </div>
       </div>
 
     </div>
 
-    {/* ADD THIS SECTION */}
-    <div className="flex gap-6 text-sm text-gray-400">
-      <a
-        href="/privacy"
-        className="hover:text-cyan-400 transition"
-      >
-        Privacy Policy
-      </a>
+    {/* Bottom */}
+    <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
 
-      <a
-        href="/terms"
-        className="hover:text-cyan-400 transition"
-      >
-        Terms of Service
-      </a>
+      <p className="text-gray-500 text-sm">
+        © 2026 Aivexa. All rights reserved.
+      </p>
+
+      <p className="text-gray-600 text-sm">
+        Built with AI-powered innovation.
+      </p>
+
     </div>
-
-    <p className="text-gray-500 text-sm text-center">
-      © 2026 Aivexa. All rights reserved.
-    </p>
 
   </div>
 
