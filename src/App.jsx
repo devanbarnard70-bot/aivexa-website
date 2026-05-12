@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
@@ -7,15 +8,43 @@ export default function App() {
   {/* Gradient Background */}
   <div className="absolute inset-0 bg-gradient-to-br from-[#050816] via-[#0f172a] to-[#020617]" />
 
-  {/* Orb 1 */}
-  <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[120px] animate-pulse" />
+<motion.div
+  animate={{
+    y: [0, -40, 0],
+    x: [0, 30, 0],
+  }}
+  transition={{
+    duration: 10,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[120px]"
+/>
 
-  {/* Orb 2 */}
-  <div className="absolute bottom-[-10%] right-[-10%] w-[450px] h-[450px] bg-purple-500/20 rounded-full blur-[120px] animate-pulse" />
+<motion.div
+  animate={{
+    y: [0, 30, 0],
+    x: [0, -20, 0],
+  }}
+  transition={{
+    duration: 12,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute bottom-[-10%] right-[-10%] w-[450px] h-[450px] bg-purple-500/20 rounded-full blur-[120px]"
+/>
 
-  {/* Orb 3 */}
-  <div className="absolute top-[40%] left-[35%] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px] animate-bounce" />
-
+<motion.div
+  animate={{
+    y: [0, -20, 0],
+  }}
+  transition={{
+    duration: 8,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="absolute top-[40%] left-[35%] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px]"
+/>
   {/* Moving Gradient */}
   <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,#06b6d4,transparent_35%),radial-gradient(circle_at_bottom_right,#8b5cf6,transparent_35%)] animate-pulse" />
 
@@ -81,7 +110,12 @@ export default function App() {
       </nav>
 
       {/* HERO */}
-      <section className="relative px-8 py-32 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
+      <motion.section 
+      initial={{ opacity: 0, y: 40 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ duration: 1 }}
+
+      className="relative px-8 py-32 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
 
         <div className="animate-bounce mb-8">
 
@@ -110,14 +144,19 @@ export default function App() {
 
         <div className="flex flex-wrap justify-center gap-4">
 
-          <a
-            href="https://tally.so/r/44A1Zk"
+          <motion.a
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0px 0px 30px rgba(34,211,238,0.5)",
+  }}
+  whileTap={{ scale: 0.95 }}
+  href="https://tally.so/r/44A1Zk"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-cyan-500 hover:bg-cyan-400 transition duration-300 px-8 py-4 rounded-xl font-semibold text-black shadow-[0_0_30px_rgba(0,255,255,0.3)]"
           >
             Book Free Consultation
-          </a>
+          </motion.a>
 
           <a
             href="https://tally.so/r/b5K6y6"
@@ -129,7 +168,7 @@ export default function App() {
           </a>
 
         </div>
-</section>
+</motion.section>
 {/* TRUST SECTION */}
 <section className="px-8 py-16">
   <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
