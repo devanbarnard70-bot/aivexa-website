@@ -1182,7 +1182,15 @@ export default function App() {
     >
       Terms of Service
     </a>
-
+    <a
+  href="/cookie-policy"
+  className="hover:text-white transition"
+>
+  Cookie Policy
+</a>
+<p className="text-gray-500">
+  © {new Date().getFullYear()} Aivexa. All rights reserved.
+</p>
   </div>
 </div>
 
