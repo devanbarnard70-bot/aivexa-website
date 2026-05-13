@@ -464,51 +464,7 @@ export default function App() {
   </div>
 
 </section>
-      {/* PORTFOLIO */}
-      <section
-        id="portfolio"
-        className="relative px-8 py-28 bg-black/20"
-      >
-        <div className="max-w-7xl mx-auto">
-
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Portfolio
-            </h2>
-
-            <p className="text-gray-400">
-              Example automation systems built for businesses.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {[
-              "AI Quote Request System",
-              "WhatsApp Lead Automation",
-              "CRM Workflow Integration",
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition duration-500"
-              >
-                <div className="h-48 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-2xl mb-6"></div>
-
-                <h3 className="text-2xl font-semibold mb-4">
-                  {item}
-                </h3>
-
-                <p className="text-gray-400">
-                  Intelligent automation system designed to streamline business operations.
-                </p>
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-      </section>
-
+  
       {/* FAQ */}
       <section
         id="faq"
