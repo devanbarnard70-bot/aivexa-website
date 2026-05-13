@@ -283,7 +283,8 @@ export default function App() {
         </p>
 
         <h3 className="text-2xl font-bold mb-4">
-          CRM Automation Workflow
+          Appointment Booking Automation
+
         </h3>
 
         <p className="text-gray-300 leading-relaxed">
