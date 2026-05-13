@@ -660,71 +660,112 @@ export default function App() {
   </div>
 </section>   
 {/* HOW IT WORKS */}
-<section className="px-8 py-14 md:py-20 bg-black/20">
+<section className="relative px-8 py-32 bg-gradient-to-b from-black/10 to-black/30 overflow-hidden">
 
-  <div className="max-w-6xl mx-auto">
+  {/* Glow Background */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
 
-    <div className="text-center mb-20">
+  <div className="max-w-7xl mx-auto relative z-10">
 
-      <h2 className="text-5xl font-bold mb-6">
-        How It Works
+    {/* Heading */}
+    <div className="text-center mb-24">
+
+      <p className="text-cyan-400 uppercase tracking-[4px] font-semibold mb-4">
+        Simple Process
+      </p>
+
+      <h2 className="text-5xl md:text-6xl font-black mb-6">
+        How It
+        <span className="text-cyan-400"> Works</span>
       </h2>
 
-      <p className="text-gray-400 max-w-2xl mx-auto">
-        Our process is simple, fast, and designed to automate your business efficiently.
+      <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+        Our automation process is designed to be fast, efficient,
+        and tailored specifically to your business operations.
       </p>
 
     </div>
 
+    {/* Steps */}
     <div className="grid md:grid-cols-3 gap-8">
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition duration-300">
+      {/* STEP 1 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="relative bg-white/5 border border-cyan-500/20 rounded-3xl p-10 backdrop-blur-xl overflow-hidden hover:border-cyan-400 shadow-[0_0_50px_rgba(0,255,255,0.08)]"
+      >
 
-        <div className="text-cyan-400 text-5xl font-black mb-6">
+        <div className="absolute top-0 right-0 text-[120px] font-black text-white/5 leading-none">
           01
         </div>
 
-        <h3 className="text-2xl font-semibold mb-4">
+        <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-3xl mb-8">
+          📞
+        </div>
+
+        <h3 className="text-3xl font-bold mb-5">
           Consultation
         </h3>
 
-        <p className="text-gray-400">
-          We analyse your business and identify automation opportunities.
+        <p className="text-gray-400 leading-relaxed text-lg">
+          We analyse your business operations and identify the best
+          automation opportunities to improve efficiency and growth.
         </p>
 
-      </div>
+      </motion.div>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition duration-300">
+      {/* STEP 2 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="relative bg-white/5 border border-purple-500/20 rounded-3xl p-10 backdrop-blur-xl overflow-hidden hover:border-purple-400 shadow-[0_0_50px_rgba(168,85,247,0.08)]"
+      >
 
-        <div className="text-cyan-400 text-5xl font-black mb-6">
+        <div className="absolute top-0 right-0 text-[120px] font-black text-white/5 leading-none">
           02
         </div>
 
-        <h3 className="text-2xl font-semibold mb-4">
+        <div className="w-16 h-16 rounded-2xl bg-purple-500/20 flex items-center justify-center text-3xl mb-8">
+          ⚙️
+        </div>
+
+        <h3 className="text-3xl font-bold mb-5">
           System Build
         </h3>
 
-        <p className="text-gray-400">
-          We create intelligent AI workflows tailored specifically to your business.
+        <p className="text-gray-400 leading-relaxed text-lg">
+          We build intelligent AI workflows and automation systems
+          customised specifically for your business needs.
         </p>
 
-      </div>
+      </motion.div>
 
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-cyan-500 transition duration-300">
+      {/* STEP 3 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="relative bg-white/5 border border-pink-500/20 rounded-3xl p-10 backdrop-blur-xl overflow-hidden hover:border-pink-400 shadow-[0_0_50px_rgba(236,72,153,0.08)]"
+      >
 
-        <div className="text-cyan-400 text-5xl font-black mb-6">
+        <div className="absolute top-0 right-0 text-[120px] font-black text-white/5 leading-none">
           03
         </div>
 
-        <h3 className="text-2xl font-semibold mb-4">
-          Automation Launch
+        <div className="w-16 h-16 rounded-2xl bg-pink-500/20 flex items-center justify-center text-3xl mb-8">
+          🚀
+        </div>
+
+        <h3 className="text-3xl font-bold mb-5">
+          Launch & Scale
         </h3>
 
-        <p className="text-gray-400">
-          Your AI systems go live and start saving time, improving efficiency, and generating results.
+        <p className="text-gray-400 leading-relaxed text-lg">
+          Your automation systems go live and immediately begin
+          saving time, increasing efficiency, and generating results.
         </p>
 
-      </div>
+      </motion.div>
 
     </div>
 
