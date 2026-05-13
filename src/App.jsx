@@ -508,7 +508,7 @@ export default function App() {
   </div>
 </section>   
 {/* HOW IT WORKS */}
-<section className="px-8 py-28 bg-black/20">
+<section className="px-8 py-14 md:py-20 bg-black/20">
 
   <div className="max-w-6xl mx-auto">
 
