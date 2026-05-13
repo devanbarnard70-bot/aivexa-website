@@ -188,7 +188,7 @@ export default function App() {
   {/* DEMO SHOWCASE */}
 <section
   id="demo-showcase"
-  className="relative px-8 pt-52 pb-28 max-w-7xl mx-auto"
+  className="relative px-8 pt-24 md:pt-52 pb-14 md:pb-28 max-w-7xl mx-auto"
 >
 
   {/* Section Heading */}
@@ -358,7 +358,7 @@ export default function App() {
 </section>
 
      {/* SERVICES & PRICING SECTION */}
-<section id="services" className="relative py-24 px-6 bg-[#050816] text-white">
+<section id="services" className="relative py-14 md:py-28 px-6 bg-[#050816] text-white">
   <div className="max-w-7xl mx-auto">
 
     {/* Heading */}
@@ -583,7 +583,7 @@ export default function App() {
       {/* FAQ */}
       <section
         id="faq"
-        className="relative px-8 py-28"
+        className="relative px-8 py-12 md:py-28"
       >
         <div className="max-w-4xl mx-auto">
 
@@ -707,7 +707,7 @@ export default function App() {
       {/* CONTACT */}
       <section
         id="contact"
-        className="relative px-8 py-28 bg-black/20"
+        className="relative px-8 py-12 md:py-28 bg-black/20"
       >
         <div className="max-w-4xl mx-auto text-center">
 
