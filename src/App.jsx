@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+const [selectedImage, setSelectedImage] = useState(null);
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
@@ -206,12 +208,12 @@ export default function App() {
       className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
     >
 
-      <img
-        src="/demos/demo1.png"
-        alt="WhatsApp Chatbot Demo"
-        className="w-full h-72 object-cover"
-      />
-
+    <img
+  src="/demos/demo1.png"
+  alt="WhatsApp Chatbot Demo"
+  className="w-full h-72 object-cover cursor-pointer hover:scale-105 transition duration-300"
+  onClick={() => setSelectedImage("/demos/demo1.png")}
+/>
       <div className="p-8">
 
         <p className="text-cyan-400 font-semibold mb-3">
@@ -238,11 +240,12 @@ export default function App() {
       className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
     >
 
-      <img
-        src="/demos/demo2.png"
-        alt="AI Lead Capture Workflow"
-        className="w-full h-72 object-cover"
-      />
+ <img
+  src="/demos/demo2.png"
+  alt="AI Lead Capture Workflow"
+  className="w-full h-72 object-cover cursor-pointer hover:scale-105 transition duration-300"
+  onClick={() => setSelectedImage("/demos/demo2.png")}
+/>
 
       <div className="p-8">
 
@@ -270,11 +273,12 @@ export default function App() {
       className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
     >
 
-      <img
-        src="/demos/demo3.png"
-        alt="CRM Automation Workflow"
-        className="w-full h-72 object-cover"
-      />
+    <img
+  src="/demos/demo3.png"
+  alt="CRM Automation Workflow"
+  className="w-full h-72 object-cover cursor-pointer hover:scale-105 transition duration-300"
+  onClick={() => setSelectedImage("/demos/demo3.png")}
+/>
 
       <div className="p-8">
 
@@ -926,7 +930,30 @@ export default function App() {
     <path d="M19.11 17.21c-.29-.15-1.69-.83-1.95-.92-.26-.1-.45-.15-.64.15-.19.29-.73.92-.89 1.11-.16.19-.33.22-.62.07-.29-.15-1.21-.44-2.3-1.41-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.44.13-.59.13-.13.29-.33.44-.49.15-.17.19-.29.29-.48.1-.19.05-.37-.02-.52-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.49.07-.74.37-.26.29-.98.96-.98 2.35s1 2.74 1.14 2.93c.15.19 1.96 3 4.75 4.2.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.69-.69 1.93-1.35.24-.66.24-1.22.17-1.35-.07-.13-.26-.21-.55-.36z"/>
     <path d="M16 .4C7.39.4.4 7.39.4 16c0 2.82.74 5.58 2.15 8L0 32l8.22-2.51A15.52 15.52 0 0016 31.6c8.61 0 15.6-6.99 15.6-15.6C31.6 7.39 24.61.4 16 .4zm0 28.4c-2.42 0-4.79-.65-6.86-1.89l-.49-.29-4.88 1.49 1.5-4.75-.32-.49A12.72 12.72 0 013.2 16C3.2 8.93 8.93 3.2 16 3.2S28.8 8.93 28.8 16 23.07 28.8 16 28.8z"/>
   </svg>
-  </a>
+    </a>
+    {/* IMAGE MODAL */}
+{selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-6"
+    onClick={() => setSelectedImage(null)}
+  >
+
+    {/* Close Button */}
+    <button
+      className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-cyan-400 transition"
+    >
+      ×
+    </button>
+
+    {/* Enlarged Image */}
+    <img
+      src={selectedImage}
+      alt="Expanded Demo"
+      className="max-w-7xl w-full max-h-[90vh] object-contain rounded-2xl shadow-[0_0_60px_rgba(0,255,255,0.25)]"
+    />
+
+  </div>
+)}
 </div>
 );
 }
