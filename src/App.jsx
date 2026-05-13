@@ -456,7 +456,44 @@ export default function App() {
 
     <p className="text-gray-400 mb-6">
       AI chatbots & automation systems for property agencies.
+          </p>
+          {/* PROBLEM → SOLUTION → RESULT */}
+<div className="space-y-4 mb-6">
+
+  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
+    <p className="text-red-400 font-semibold mb-2">
+      Problem
     </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Missing leads, slow customer replies, and manual admin tasks
+      causing lost sales opportunities.
+    </p>
+  </div>
+
+  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
+    <p className="text-cyan-400 font-semibold mb-2">
+      Aivexa Solution
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      AI chatbots, WhatsApp automation, lead capture systems,
+      and CRM workflows that automate customer communication 24/7.
+    </p>
+  </div>
+
+  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
+    <p className="text-green-400 font-semibold mb-2">
+      Result
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Faster response times, more qualified leads,
+      reduced manual work, and improved customer conversions.
+    </p>
+  </div>
+
+</div>
 
     <div className="mb-8">
 
@@ -526,7 +563,43 @@ export default function App() {
     <p className="text-gray-300 mb-6">
       AI systems for vehicle enquiries and customer follow-ups.
     </p>
+{/* PROBLEM → SOLUTION → RESULT */}
+<div className="space-y-4 mb-6">
 
+  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
+    <p className="text-red-400 font-semibold mb-2">
+      Problem
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Missing leads, slow customer replies, and manual admin tasks
+      causing lost sales opportunities.
+    </p>
+  </div>
+
+  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
+    <p className="text-cyan-400 font-semibold mb-2">
+      Aivexa Solution
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      AI chatbots, WhatsApp automation, lead capture systems,
+      and CRM workflows that automate customer communication 24/7.
+    </p>
+  </div>
+
+  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
+    <p className="text-green-400 font-semibold mb-2">
+      Result
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Faster response times, more qualified leads,
+      reduced manual work, and improved customer conversions.
+    </p>
+  </div>
+
+</div>
     <div className="mb-8">
 
       <div className="flex justify-between items-center mb-2">
@@ -595,7 +668,43 @@ export default function App() {
     <p className="text-gray-400 mb-6">
       Booking and customer automation for clinics & salons.
     </p>
+{/* PROBLEM → SOLUTION → RESULT */}
+<div className="space-y-4 mb-6">
 
+  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
+    <p className="text-red-400 font-semibold mb-2">
+      Problem
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Missing leads, slow customer replies, and manual admin tasks
+      causing lost sales opportunities.
+    </p>
+  </div>
+
+  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
+    <p className="text-cyan-400 font-semibold mb-2">
+      Aivexa Solution
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      AI chatbots, WhatsApp automation, lead capture systems,
+      and CRM workflows that automate customer communication 24/7.
+    </p>
+  </div>
+
+  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
+    <p className="text-green-400 font-semibold mb-2">
+      Result
+    </p>
+
+    <p className="text-gray-300 text-sm leading-relaxed">
+      Faster response times, more qualified leads,
+      reduced manual work, and improved customer conversions.
+    </p>
+  </div>
+
+</div>
     <div className="mb-8">
 
       <div className="flex justify-between items-center mb-2">
