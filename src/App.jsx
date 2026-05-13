@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookiePolicy from "./pages/CookiePolicy";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
@@ -1159,7 +1160,9 @@ export default function App() {
   >
     <FaYoutube />
   </a>
-
+<div className="text-white text-4xl">
+  <FaInstagram />
+</div>
 </div>
 
           <a
