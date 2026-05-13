@@ -109,65 +109,69 @@ export default function App() {
 
       </nav>
 
-      {/* HERO */}
-      <motion.section 
-      initial={{ opacity: 0, y: 40 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 1 }}
+{/* HERO */}
+<motion.section 
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="relative px-8 py-32 max-w-7xl mx-auto flex flex-col items-center justify-center text-center"
+>
 
-      className="relative px-8 py-32 max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
+  <div className="animate-bounce mb-8">
+    <img
+      src="/logo.png"
+      alt="Aivexa Logo"
+      className="w-56 md:w-72 object-contain drop-shadow-[0_0_40px_rgba(0,255,255,0.6)]"
+    />
+  </div>
 
-        <div className="animate-bounce mb-8">
+  {/* Small Label */}
+  <p className="text-cyan-400 font-semibold mb-4 tracking-[3px]">
+    AI AUTOMATION AGENCY
+  </p>
 
-          <img
-            src="/logo.png"
-            alt="Aivexa Logo"
-            className="w-56 md:w-72 object-contain drop-shadow-[0_0_40px_rgba(0,255,255,0.6)]"
-          />
+  {/* Updated Main Heading */}
+  <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8 max-w-6xl">
+    AI Automation That Saves Your Business{" "}
+    <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+      Time, Leads & Money
+    </span>
+  </h1>
 
-        </div>
+  {/* Updated Subheading */}
+  <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl">
+    Aivexa helps businesses automate customer communication, WhatsApp replies,
+    lead capture, and repetitive tasks using intelligent AI systems.
+  </p>
 
-        <p className="text-cyan-400 font-semibold mb-4 tracking-[3px]">
-          AI AUTOMATION AGENCY
-        </p>
+  {/* CTA Buttons */}
+  <div className="flex flex-wrap justify-center gap-4">
 
-        <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8 max-w-5xl">
-          Smarter Systems.
-          <span className="text-cyan-400"> Faster Growth.</span>
-        </h1>
+    {/* Updated Main CTA */}
+    <motion.a
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 0px 30px rgba(34,211,238,0.5)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      href="https://tally.so/r/b5K6y6"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-cyan-500 hover:bg-cyan-400 transition duration-300 px-8 py-4 rounded-xl font-semibold text-black shadow-[0_0_30px_rgba(0,255,255,0.3)]"
+    >
+      Get A Free Quote
+    </motion.a>
 
-        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl">
-          Aivexa helps businesses automate workflows, streamline operations,
-          improve customer communication, and scale faster using intelligent
-          AI-powered systems.
-        </p>
+    {/* Secondary CTA */}
+    <a
+      href="#services"
+      className="border border-cyan-500 hover:bg-cyan-500/10 transition duration-300 px-8 py-4 rounded-xl"
+    >
+      Explore Services
+    </a>
 
-        <div className="flex flex-wrap justify-center gap-4">
+  </div>
 
-          <motion.a
-  whileHover={{
-    scale: 1.05,
-    boxShadow: "0px 0px 30px rgba(34,211,238,0.5)",
-  }}
-  whileTap={{ scale: 0.95 }}
-  href="https://tally.so/r/44A1Zk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-cyan-500 hover:bg-cyan-400 transition duration-300 px-8 py-4 rounded-xl font-semibold text-black shadow-[0_0_30px_rgba(0,255,255,0.3)]"
-          >
-            Book Free Consultation
-          </motion.a>
-
-          <a
-            href="https://tally.so/r/b5K6y6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-cyan-500 hover:bg-cyan-500/10 transition duration-300 px-8 py-4 rounded-xl"
-          >
-            Request a Quote
-          </a>
-
-        </div>
 </motion.section>
 {/* TRUST SECTION */}
 <section className="px-8 py-16">
