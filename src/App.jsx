@@ -1,7 +1,8 @@
-
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function App() {
+  const [selectedImage, setSelectedImage] = useState("");
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
       {/* Animated Background */}
@@ -930,8 +931,22 @@ export default function App() {
     <path d="M19.11 17.21c-.29-.15-1.69-.83-1.95-.92-.26-.1-.45-.15-.64.15-.19.29-.73.92-.89 1.11-.16.19-.33.22-.62.07-.29-.15-1.21-.44-2.3-1.41-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.44.13-.59.13-.13.29-.33.44-.49.15-.17.19-.29.29-.48.1-.19.05-.37-.02-.52-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.49.07-.74.37-.26.29-.98.96-.98 2.35s1 2.74 1.14 2.93c.15.19 1.96 3 4.75 4.2.66.29 1.18.46 1.58.59.66.21 1.26.18 1.73.11.53-.08 1.69-.69 1.93-1.35.24-.66.24-1.22.17-1.35-.07-.13-.26-.21-.55-.36z"/>
     <path d="M16 .4C7.39.4.4 7.39.4 16c0 2.82.74 5.58 2.15 8L0 32l8.22-2.51A15.52 15.52 0 0016 31.6c8.61 0 15.6-6.99 15.6-15.6C31.6 7.39 24.61.4 16 .4zm0 28.4c-2.42 0-4.79-.65-6.86-1.89l-.49-.29-4.88 1.49 1.5-4.75-.32-.49A12.72 12.72 0 013.2 16C3.2 8.93 8.93 3.2 16 3.2S28.8 8.93 28.8 16 23.07 28.8 16 28.8z"/>
   </svg>
-    </a>
-    
+</a>
+
+{/* IMAGE POPUP */}
+{selectedImage !== "" && (
+  <div
+    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
+    onClick={() => setSelectedImage("")}
+  >
+    <img
+      src={selectedImage}
+      alt="Expanded Demo"
+      className="max-w-full max-h-full rounded-2xl"
+    />
+  </div>
+)}
+
 </div>
 );
 }
