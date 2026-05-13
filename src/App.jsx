@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CookiePolicy from "./pages/CookiePolicy";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
@@ -23,8 +25,14 @@ export default function App() {
       localStorage.setItem("cookieConsent", "declined");
       banner.style.display = "none";
     });
-}, []);
+}, []);<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<YourHomePage />} />
+    <Route path="/cookie-policy" element={<CookiePolicy />} />
+  </Routes>
+</BrowserRouter>
   return (
+    
     
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
       {/* Animated Background */}
