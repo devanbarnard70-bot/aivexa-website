@@ -342,56 +342,7 @@ export default function App() {
 
   </div>
 </section>
-      {/* SERVICES */}
-      <section
-        id="services"
-        className="relative px-8 py-28"
-      >
-        <div className="max-w-7xl mx-auto">
 
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Services
-            </h2>
-
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Intelligent automation systems designed for modern businesses.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {[
-              {
-                title: "AI Chatbots",
-                desc: "AI-powered assistants for support, lead generation, and customer engagement.",
-              },
-              {
-                title: "WhatsApp Automation",
-                desc: "Automate communication, bookings, follow-ups, and customer interactions.",
-              },
-              {
-                title: "Workflow Automation",
-                desc: "Connect systems and eliminate repetitive manual business tasks.",
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-3xl p-8 hover:border-cyan-500 hover:-translate-y-2 transition duration-500"
-              >
-                <h3 className="text-2xl font-semibold text-cyan-400 mb-4">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-400">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
-
-          </div>
-        </div>
-        </section>
      {/* SERVICES & PRICING SECTION */}
 <section id="services" className="relative py-24 px-6 bg-[#050816] text-white">
   <div className="max-w-7xl mx-auto">
