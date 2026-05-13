@@ -172,6 +172,16 @@ export default function App() {
     >
       Explore Services
     </a>
+    {/* VIEW DEMO CTA BUTTON */}
+<button
+  onClick={() => {
+    const section = document.getElementById("portfolio");
+    section?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 hover:bg-white/10 backdrop-blur-md transition duration-300 font-semibold text-white shadow-lg hover:scale-105"
+>
+  View Demo
+</button>
 
   </div>
   {/* DEMO SHOWCASE */}
