@@ -321,40 +321,114 @@ export default function App() {
 
 </motion.section>
 {/* TRUST SECTION */}
-<section className="px-8 py-16">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+<section className="relative px-8 py-24">
 
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-      <h3 className="text-4xl font-black text-cyan-400 mb-3">
-        24/7
-      </h3>
+  <div className="max-w-6xl mx-auto">
 
-      <p className="text-gray-400">
-        Automated business systems running around the clock.
+    {/* Heading */}
+    <div className="text-center mb-16">
+
+      <p className="text-cyan-400 font-semibold tracking-[4px] uppercase mb-4">
+        Why Businesses Choose AIVEXA
       </p>
+
+      <h2 className="text-4xl md:text-5xl font-black mb-6">
+        Intelligent AI Systems
+        <span className="text-cyan-400"> Built For Growth</span>
+      </h2>
+
+      <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+        We help businesses automate repetitive tasks, improve customer response
+        times, and scale operations using powerful AI automation systems.
+      </p>
+
     </div>
 
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-      <h3 className="text-4xl font-black text-cyan-400 mb-3">
-        AI
-      </h3>
+    {/* Cards */}
+    <div className="grid md:grid-cols-3 gap-8">
 
-      <p className="text-gray-400">
-        Intelligent automation designed to save time and increase efficiency.
-      </p>
-    </div>
+      {/* CARD 1 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white/5 border border-cyan-500/20 rounded-3xl p-8 backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)] hover:border-cyan-400"
+      >
 
-    <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
-      <h3 className="text-4xl font-black text-cyan-400 mb-3">
-        Custom
-      </h3>
+        <div className="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-3xl mb-6">
+          ⚡
+        </div>
 
-      <p className="text-gray-400">
-        Every automation system is tailored specifically to your business needs.
-      </p>
+        <h3 className="text-4xl font-black text-cyan-400 mb-3">
+          24/7
+        </h3>
+
+        <h4 className="text-2xl font-bold mb-4">
+          Always Running
+        </h4>
+
+        <p className="text-gray-400 leading-relaxed">
+          AI systems operate around the clock to capture leads,
+          answer questions, and automate business tasks instantly.
+        </p>
+
+      </motion.div>
+
+      {/* CARD 2 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white/5 border border-purple-500/20 rounded-3xl p-8 backdrop-blur-xl shadow-[0_0_40px_rgba(168,85,247,0.08)] hover:border-purple-400"
+      >
+
+        <div className="w-16 h-16 rounded-2xl bg-purple-500/20 flex items-center justify-center text-3xl mb-6">
+          🤖
+        </div>
+
+        <h3 className="text-4xl font-black text-purple-400 mb-3">
+          AI
+        </h3>
+
+        <h4 className="text-2xl font-bold mb-4">
+          Smart Automation
+        </h4>
+
+        <p className="text-gray-400 leading-relaxed">
+          Intelligent automation systems designed to save time,
+          improve efficiency, and streamline customer communication.
+        </p>
+
+      </motion.div>
+
+      {/* CARD 3 */}
+      <motion.div
+        whileHover={{ y: -10, scale: 1.03 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white/5 border border-pink-500/20 rounded-3xl p-8 backdrop-blur-xl shadow-[0_0_40px_rgba(236,72,153,0.08)] hover:border-pink-400"
+      >
+
+        <div className="w-16 h-16 rounded-2xl bg-pink-500/20 flex items-center justify-center text-3xl mb-6">
+          🚀
+        </div>
+
+        <h3 className="text-4xl font-black text-pink-400 mb-3">
+          Custom
+        </h3>
+
+        <h4 className="text-2xl font-bold mb-4">
+          Tailored Solutions
+        </h4>
+
+        <p className="text-gray-400 leading-relaxed">
+          Every automation workflow is customized specifically for
+          your business goals, systems, and operational needs.
+        </p>
+
+      </motion.div>
+
     </div>
 
   </div>
+
 </section>
 
      {/* SERVICES & PRICING SECTION */}
