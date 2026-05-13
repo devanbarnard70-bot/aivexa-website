@@ -1128,6 +1128,39 @@ export default function App() {
         </p>
 
         <div className="flex gap-4 mt-6">
+          <div className="flex items-center gap-4 mt-4">
+
+  {/* Instagram */}
+  <a
+    href="https://instagram.com/officialaivexa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-pink-500 text-2xl transition"
+  >
+    <FaInstagram />
+  </a>
+
+  {/* Facebook */}
+  <a
+    href="https://facebook.com/aivexa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-blue-500 text-2xl transition"
+  >
+    <FaFacebook />
+  </a>
+
+  {/* YouTube */}
+  <a
+    href="https://youtube.com/@offcialaivexa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-400 hover:text-red-500 text-2xl transition"
+  >
+    <FaYoutube />
+  </a>
+
+</div>
 
           <a
             href="https://linkedin.com/company/officialaivexa"
