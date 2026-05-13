@@ -1,6 +1,6 @@
-import { useState } from "react";
+
 import { motion } from "framer-motion";
-const [selectedImage, setSelectedImage] = useState(null);
+
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
@@ -931,29 +931,7 @@ export default function App() {
     <path d="M16 .4C7.39.4.4 7.39.4 16c0 2.82.74 5.58 2.15 8L0 32l8.22-2.51A15.52 15.52 0 0016 31.6c8.61 0 15.6-6.99 15.6-15.6C31.6 7.39 24.61.4 16 .4zm0 28.4c-2.42 0-4.79-.65-6.86-1.89l-.49-.29-4.88 1.49 1.5-4.75-.32-.49A12.72 12.72 0 013.2 16C3.2 8.93 8.93 3.2 16 3.2S28.8 8.93 28.8 16 23.07 28.8 16 28.8z"/>
   </svg>
     </a>
-    {/* IMAGE MODAL */}
-{selectedImage && (
-  <div
-    className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-6"
-    onClick={() => setSelectedImage(null)}
-  >
-
-    {/* Close Button */}
-<button
-  className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-cyan-400 transition"
->
-x
-</button>
-
-    {/* Enlarged Image */}
-    <img
-      src={selectedImage}
-      alt="Expanded Demo"
-      className="max-w-7xl w-full max-h-[90vh] object-contain rounded-2xl shadow-[0_0_60px_rgba(0,255,255,0.25)]"
-    />
-
-  </div>
-)}
+    
 </div>
 );
 }
