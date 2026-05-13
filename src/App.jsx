@@ -543,7 +543,7 @@ export default function App() {
       </p>
 
       <p className="text-pink-300 text-lg mb-4">
-        + R1,000/mo Retainer
+        + R1000/pm Retainer
       </p>
 
       <ul className="space-y-2 text-gray-300">
@@ -567,7 +567,7 @@ export default function App() {
       </p>
 
       <p className="text-pink-300 text-lg mb-4">
-        + R2,000/mo Retainer
+        + R2000/pm Retainer
       </p>
 
       <ul className="space-y-2 text-gray-300">
