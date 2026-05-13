@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookiePolicy from "./pages/CookiePolicy";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebook,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
@@ -1128,17 +1133,16 @@ export default function App() {
           automate conversations, generate leads, and improve customer experience.
         </p>
 
-        <div className="flex gap-4 mt-6">
-          <div className="flex items-center gap-4 mt-4">
+        <div className="flex items-center gap-4 mt-6">
 
   {/* Instagram */}
   <a
     href="https://instagram.com/officialaivexa"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-gray-400 hover:text-pink-500 text-2xl transition"
+    className="bg-white/5 hover:bg-pink-500/20 border border-white/10 hover:border-pink-400 transition p-3 rounded-xl text-gray-300 hover:text-pink-400"
   >
-    <FaInstagram />
+    <FaInstagram className="w-6 h-6" />
   </a>
 
   {/* Facebook */}
@@ -1146,98 +1150,32 @@ export default function App() {
     href="https://facebook.com/aivexa"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-gray-400 hover:text-blue-500 text-2xl transition"
+    className="bg-white/5 hover:bg-blue-500/20 border border-white/10 hover:border-blue-400 transition p-3 rounded-xl text-gray-300 hover:text-blue-400"
   >
-    <FaFacebook />
+    <FaFacebook className="w-6 h-6" />
   </a>
 
   {/* YouTube */}
   <a
-    href="https://youtube.com/@offcialaivexa"
+    href="https://youtube.com/@officialaivexa"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-gray-400 hover:text-red-500 text-2xl transition"
+    className="bg-white/5 hover:bg-red-500/20 border border-white/10 hover:border-red-400 transition p-3 rounded-xl text-gray-300 hover:text-red-400"
   >
-    <FaYoutube />
+    <FaYoutube className="w-6 h-6" />
   </a>
-<div className="text-white text-4xl">
-  <FaInstagram />
+
+  {/* LinkedIn */}
+  <a
+    href="https://linkedin.com/company/officialaivexa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition p-3 rounded-xl text-gray-300 hover:text-cyan-400"
+  >
+    <FaLinkedin className="w-6 h-6" />
+  </a>
 </div>
 </div>
-
-          <a
-            href="https://linkedin.com/company/officialaivexa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition p-3 rounded-xl"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.3V24h-4v-7.4c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8z"/>
-            </svg>
-          </a>
-
-        </div>
-      </div>
-
-    {/* Quick Links */}
-<div>
-  <h3 className="text-xl font-semibold mb-6">
-    Quick Links
-  </h3>
-
-  <div className="flex flex-col gap-4 text-gray-400">
-
-    <a
-      href="#services"
-      className="hover:text-cyan-400 transition"
-    >
-      Services
-    </a>
-
-    <a
-      href="#about"
-      className="hover:text-cyan-400 transition"
-    >
-      About
-    </a>
-
-    <a
-      href="#contact"
-      className="hover:text-cyan-400 transition"
-    >
-      Contact
-    </a>
-
-    <a
-      href="/privacy"
-      className="hover:text-cyan-400 transition"
-    >
-      Privacy Policy
-    </a>
-
-    <a
-      href="/terms"
-      className="hover:text-cyan-400 transition"
-    >
-      Terms of Service
-    </a>
-    <a
-  href="/cookie-policy"
-  className="hover:text-white transition"
->
-  Cookie Policy
-</a>
-<p className="text-gray-500">
-  © {new Date().getFullYear()} Aivexa. All rights reserved.
-</p>
-  </div>
-</div>
-
       {/* Contact */}
       <div>
         <h3 className="text-xl font-semibold mb-6">
