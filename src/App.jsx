@@ -171,6 +171,133 @@ export default function App() {
     </a>
 
   </div>
+  {/* DEMO SHOWCASE */}
+<section className="relative px-8 py-28 max-w-7xl mx-auto">
+
+  {/* Section Heading */}
+  <div className="text-center mb-20">
+
+    <p className="text-cyan-400 font-semibold tracking-[3px] mb-4">
+      AI AUTOMATION DEMOS
+    </p>
+
+    <h2 className="text-4xl md:text-6xl font-black mb-6">
+      AI Automation In{" "}
+      <span className="text-cyan-400">
+        Action
+      </span>
+    </h2>
+
+    <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
+      Explore real-world examples of AI chatbots, lead capture systems,
+      CRM automation, and intelligent workflows designed to help
+      businesses operate smarter and faster.
+    </p>
+
+  </div>
+
+  {/* Demo Cards */}
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    {/* DEMO 1 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3 }}
+      className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
+    >
+
+      <img
+        src="/demos/demo1.png"
+        alt="WhatsApp Chatbot Demo"
+        className="w-full h-72 object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-cyan-400 font-semibold mb-3">
+          DEMO 1
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          WhatsApp AI Chatbot
+        </h3>
+
+        <p className="text-gray-300 leading-relaxed">
+          AI-powered WhatsApp automation that handles customer support,
+          quote requests, lead capture, and instant replies 24/7.
+        </p>
+
+      </div>
+
+    </motion.div>
+
+    {/* DEMO 2 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3 }}
+      className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
+    >
+
+      <img
+        src="/demos/demo2.png"
+        alt="AI Lead Capture Workflow"
+        className="w-full h-72 object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-cyan-400 font-semibold mb-3">
+          DEMO 2
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          AI Lead Capture Workflow
+        </h3>
+
+        <p className="text-gray-300 leading-relaxed">
+          Automatically capture, qualify, and nurture leads using AI,
+          CRM integration, WhatsApp follow-ups, and automated workflows.
+        </p>
+
+      </div>
+
+    </motion.div>
+
+    {/* DEMO 3 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.3 }}
+      className="bg-white/5 border border-cyan-500/20 rounded-3xl overflow-hidden backdrop-blur-xl shadow-[0_0_40px_rgba(0,255,255,0.08)]"
+    >
+
+      <img
+        src="/demos/demo3.png"
+        alt="CRM Automation Workflow"
+        className="w-full h-72 object-cover"
+      />
+
+      <div className="p-8">
+
+        <p className="text-cyan-400 font-semibold mb-3">
+          DEMO 3
+        </p>
+
+        <h3 className="text-2xl font-bold mb-4">
+          CRM Automation Workflow
+        </h3>
+
+        <p className="text-gray-300 leading-relaxed">
+          Streamline lead management, automate follow-ups, and improve
+          customer relationships with intelligent CRM automation systems.
+        </p>
+
+      </div>
+
+    </motion.div>
+
+  </div>
+
+</section>
 
 </motion.section>
 {/* TRUST SECTION */}
