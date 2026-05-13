@@ -1,9 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
+  useEffect(() => {
+  const banner = document.getElementById("cookie-banner");
+
+  if (localStorage.getItem("cookieConsent")) {
+    banner.style.display = "none";
+  }
+
+  document
+    .getElementById("accept-cookies")
+    ?.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "accepted");
+      banner.style.display = "none";
+    });
+
+  document
+    .getElementById("decline-cookies")
+    ?.addEventListener("click", () => {
+      localStorage.setItem("cookieConsent", "declined");
+      banner.style.display = "none";
+    });
+}, []);
   return (
+    
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
       {/* Animated Background */}
 <div className="absolute inset-0 overflow-hidden">
@@ -1226,21 +1248,49 @@ export default function App() {
   </svg>
 </a>
 
-{/* IMAGE POPUP */}
-{selectedImage !== "" && (
-  <div
-    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
-    onClick={() => setSelectedImage("")}
-  >
-    <img
-      src={selectedImage}
-      alt="Expanded Demo"
-      className="max-w-full max-h-full rounded-2xl"
-    />
-  </div>
-)}
+      {/* IMAGE POPUP */}
+      {selectedImage !== "" && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
+          onClick={() => setSelectedImage("")}
+        >
+          <img
+            src={selectedImage}
+            alt="Expanded Demo"
+            className="max-w-full max-h-full rounded-2xl"
+          />
+        </div>
+      )}
 
-</div>
-);
+
+      {/* COOKIE BANNER START */}
+      <div
+        id="cookie-banner"
+        className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-black/90 p-5 rounded-2xl shadow-2xl z-50"
+      >
+        <p className="text-sm text-white mb-4">
+          We use cookies to improve your experience on our website.
+        </p>
+
+        <div className="flex gap-3">
+          <button
+            id="accept-cookies"
+            className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg"
+          >
+            Accept
+          </button>
+
+          <button
+            id="decline-cookies"
+            className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg"
+          >
+            Decline
+          </button>
+        </div>
+      </div>
+      {/* COOKIE BANNER END */}
+
+
+    </div>
+  );
 }
-
