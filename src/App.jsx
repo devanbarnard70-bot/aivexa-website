@@ -173,9 +173,10 @@ export default function App() {
       Explore Services
     </a>
     {/* VIEW DEMO CTA BUTTON */}
+{/* VIEW DEMO CTA BUTTON */}
 <button
   onClick={() => {
-    const section = document.getElementById("portfolio");
+    const section = document.getElementById("demo-showcase");
     section?.scrollIntoView({ behavior: "smooth" });
   }}
   className="px-8 py-4 rounded-2xl border border-white/20 bg-white/5 hover:bg-white/10 backdrop-blur-md transition duration-300 font-semibold text-white shadow-lg hover:scale-105"
@@ -185,7 +186,10 @@ export default function App() {
 
   </div>
   {/* DEMO SHOWCASE */}
-<section className="relative px-8 py-28 max-w-7xl mx-auto">
+<section
+  id="demo-showcase"
+  className="relative px-8 pt-52 pb-28 max-w-7xl mx-auto"
+>
 
   {/* Section Heading */}
   <div className="text-center mb-20">
