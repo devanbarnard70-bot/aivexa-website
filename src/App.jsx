@@ -371,140 +371,211 @@ export default function App() {
         follow-ups and lead generation using AI & WhatsApp automation.
       </p>
     </div>
+{/* Pricing Cards */}
+<div className="grid md:grid-cols-3 gap-8">
 
-    {/* Pricing Cards */}
-    <div className="grid md:grid-cols-3 gap-8">
+  {/* REAL ESTATE */}
+  <motion.div
+    whileHover={{ scale: 1.04, y: -10 }}
+    transition={{ duration: 0.3 }}
+    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:border-yellow-400"
+  >
+    <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+      Real Estate
+    </h3>
 
-      {/* REAL ESTATE */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
-        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-          Real Estate
-        </h3>
+    <p className="text-gray-400 mb-6">
+      AI chatbots & automation systems for property agencies.
+    </p>
 
-        <p className="text-gray-400 mb-6">
-          AI chatbots & automation systems for property agencies.
-        </p>
+    <div className="mb-8">
+      <div className="flex items-center justify-between mb-2">
+        <h4 className="text-xl font-semibold">
+          Starter Package
+        </h4>
 
-        <div className="mb-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Starter Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R2,500
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ AI Website Chatbot</li>
-            <li>✔ Lead Capture Forms</li>
-            <li>✔ WhatsApp Notifications</li>
-            <li>✔ FAQ Automation</li>
-          </ul>
-        </div>
-
-        <div className="border-t border-white/10 pt-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Growth Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R5,000
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ Viewing Bookings</li>
-            <li>✔ CRM Integration</li>
-            <li>✔ Email Automation</li>
-            <li>✔ Lead Tracking</li>
-          </ul>
-        </div>
+        <span className="text-sm bg-yellow-400/20 text-yellow-300 px-3 py-1 rounded-full">
+          Monthly Retainer
+        </span>
       </div>
 
-      {/* CAR DEALERSHIPS */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
-        <h3 className="text-2xl font-bold mb-4 text-cyan-400">
-          Car Dealerships
-        </h3>
+      <p className="text-3xl font-bold mb-1">
+        R2,500/mo
+      </p>
 
-        <p className="text-gray-400 mb-6">
-          AI systems for vehicle enquiries and customer follow-ups.
-        </p>
+      <p className="text-sm text-gray-500 mb-4">
+        + Once-off setup fee
+      </p>
 
-        <div className="mb-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Starter Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R3,000
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ Vehicle Enquiry Bot</li>
-            <li>✔ Lead Forms</li>
-            <li>✔ WhatsApp Alerts</li>
-            <li>✔ Instant Responses</li>
-          </ul>
-        </div>
-
-        <div className="border-t border-white/10 pt-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Premium Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R6,500
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ AI Sales Assistant</li>
-            <li>✔ CRM Integration</li>
-            <li>✔ Test Drive Scheduling</li>
-            <li>✔ Automated Follow-Ups</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* CLINICS */}
-      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
-        <h3 className="text-2xl font-bold mb-4 text-pink-400">
-          Clinics & Beauty
-        </h3>
-
-        <p className="text-gray-400 mb-6">
-          Booking and customer automation for clinics & salons.
-        </p>
-
-        <div className="mb-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Basic Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R2,500
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ AI Booking Assistant</li>
-            <li>✔ FAQ Automation</li>
-            <li>✔ Appointment Requests</li>
-            <li>✔ After-Hours Replies</li>
-          </ul>
-        </div>
-
-        <div className="border-t border-white/10 pt-6">
-          <h4 className="text-xl font-semibold mb-2">
-            Advanced Package
-          </h4>
-          <p className="text-3xl font-bold mb-4">
-            R5,500
-          </p>
-
-          <ul className="space-y-2 text-gray-300">
-            <li>✔ WhatsApp Reminders</li>
-            <li>✔ Follow-Up Automation</li>
-            <li>✔ Cancellation Handling</li>
-            <li>✔ Google Review Requests</li>
-          </ul>
-        </div>
-      </div>
-
+      <ul className="space-y-2 text-gray-300">
+        <li>✔ AI Website Chatbot</li>
+        <li>✔ Lead Capture Forms</li>
+        <li>✔ WhatsApp Notifications</li>
+        <li>✔ FAQ Automation</li>
+        <li>✔ Monthly optimization</li>
+      </ul>
     </div>
+
+    <div className="border-t border-white/10 pt-6">
+      <h4 className="text-xl font-semibold mb-2">
+        Growth Package
+      </h4>
+
+      <p className="text-3xl font-bold mb-1">
+        R5,000/mo
+      </p>
+
+      <p className="text-sm text-gray-500 mb-4">
+        + Advanced automations
+      </p>
+
+      <ul className="space-y-2 text-gray-300">
+        <li>✔ Viewing Bookings</li>
+        <li>✔ CRM Integration</li>
+        <li>✔ Email Automation</li>
+        <li>✔ Lead Tracking</li>
+        <li>✔ Automated follow-ups</li>
+      </ul>
+    </div>
+  </motion.div>
+
+  {/* CAR DEALERSHIPS */}
+  <motion.div
+    whileHover={{ scale: 1.05, y: -12 }}
+    transition={{ duration: 0.3 }}
+    className="relative bg-gradient-to-b from-cyan-500/20 to-purple-500/20 border border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-[0_0_50px_rgba(0,255,255,0.15)]"
+  >
+
+    <div className="absolute top-4 right-4 bg-cyan-400 text-black text-xs font-bold px-3 py-1 rounded-full">
+      MOST POPULAR
+    </div>
+
+    <h3 className="text-2xl font-bold mb-4 text-cyan-400">
+      Car Dealerships
+    </h3>
+
+    <p className="text-gray-300 mb-6">
+      AI systems for vehicle enquiries and customer follow-ups.
+    </p>
+
+    <div className="mb-8">
+      <div className="flex items-center justify-between mb-2">
+        <h4 className="text-xl font-semibold">
+          Starter Package
+        </h4>
+
+        <span className="text-sm bg-cyan-400/20 text-cyan-300 px-3 py-1 rounded-full">
+          Monthly Retainer
+        </span>
+      </div>
+
+      <p className="text-3xl font-bold mb-1">
+        R3,000/mo
+      </p>
+
+      <p className="text-sm text-gray-400 mb-4">
+        + AI onboarding setup
+      </p>
+
+      <ul className="space-y-2 text-gray-200">
+        <li>✔ Vehicle Enquiry Bot</li>
+        <li>✔ Lead Forms</li>
+        <li>✔ WhatsApp Alerts</li>
+        <li>✔ Instant Responses</li>
+        <li>✔ Monthly improvements</li>
+      </ul>
+    </div>
+
+    <div className="border-t border-white/10 pt-6">
+      <h4 className="text-xl font-semibold mb-2">
+        Premium Package
+      </h4>
+
+      <p className="text-3xl font-bold mb-1">
+        R6,500/mo
+      </p>
+
+      <p className="text-sm text-gray-400 mb-4">
+        Full AI sales automation
+      </p>
+
+      <ul className="space-y-2 text-gray-200">
+        <li>✔ AI Sales Assistant</li>
+        <li>✔ CRM Integration</li>
+        <li>✔ Test Drive Scheduling</li>
+        <li>✔ Automated Follow-Ups</li>
+        <li>✔ Lead pipeline tracking</li>
+      </ul>
+    </div>
+  </motion.div>
+
+  {/* CLINICS */}
+  <motion.div
+    whileHover={{ scale: 1.04, y: -10 }}
+    transition={{ duration: 0.3 }}
+    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:border-pink-400"
+  >
+    <h3 className="text-2xl font-bold mb-4 text-pink-400">
+      Clinics & Beauty
+    </h3>
+
+    <p className="text-gray-400 mb-6">
+      Booking and customer automation for clinics & salons.
+    </p>
+
+    <div className="mb-8">
+      <div className="flex items-center justify-between mb-2">
+        <h4 className="text-xl font-semibold">
+          Basic Package
+        </h4>
+
+        <span className="text-sm bg-pink-400/20 text-pink-300 px-3 py-1 rounded-full">
+          Monthly Retainer
+        </span>
+      </div>
+
+      <p className="text-3xl font-bold mb-1">
+        R2,500/mo
+      </p>
+
+      <p className="text-sm text-gray-500 mb-4">
+        + Setup & configuration
+      </p>
+
+      <ul className="space-y-2 text-gray-300">
+        <li>✔ AI Booking Assistant</li>
+        <li>✔ FAQ Automation</li>
+        <li>✔ Appointment Requests</li>
+        <li>✔ After-Hours Replies</li>
+        <li>✔ Monthly maintenance</li>
+      </ul>
+    </div>
+
+    <div className="border-t border-white/10 pt-6">
+      <h4 className="text-xl font-semibold mb-2">
+        Advanced Package
+      </h4>
+
+      <p className="text-3xl font-bold mb-1">
+        R5,500/mo
+      </p>
+
+      <p className="text-sm text-gray-500 mb-4">
+        Advanced customer automation
+      </p>
+
+      <ul className="space-y-2 text-gray-300">
+        <li>✔ WhatsApp Reminders</li>
+        <li>✔ Follow-Up Automation</li>
+        <li>✔ Cancellation Handling</li>
+        <li>✔ Google Review Requests</li>
+        <li>✔ CRM integrations</li>
+      </ul>
+    </div>
+  </motion.div>
+
+</div>
+
   </div>
 </section>   
 {/* HOW IT WORKS */}
