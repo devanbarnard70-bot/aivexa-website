@@ -6,20 +6,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
       {/* Animated Background */}
-{/* Floating Particles */}
-<div className="absolute inset-0 overflow-hidden pointer-events-none">
-
-  <div className="absolute top-[10%] left-[15%] w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
-
-  <div className="absolute top-[30%] left-[80%] w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
-
-  <div className="absolute top-[70%] left-[25%] w-2 h-2 bg-blue-400 rounded-full animate-bounce"></div>
-
-  <div className="absolute top-[85%] left-[70%] w-2 h-2 bg-cyan-300 rounded-full animate-pulse"></div>
-
-  <div className="absolute top-[50%] left-[50%] w-1 h-1 bg-white rounded-full animate-ping"></div>
-
-</div>
+<div className="absolute inset-0 overflow-hidden">
 
   {/* Gradient Background */}
   <div className="absolute inset-0 bg-gradient-to-br from-[#050816] via-[#0f172a] to-[#020617]" />
@@ -122,7 +109,6 @@ export default function App() {
           </div>
 
         </div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
 
       </nav>
 
@@ -332,10 +318,7 @@ export default function App() {
   </div>
 
 </section>
-<div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-<div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
+
 </motion.section>
 {/* TRUST SECTION */}
 <section className="relative px-8 py-24">
@@ -445,13 +428,8 @@ export default function App() {
     </div>
 
   </div>
-  <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-<div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
-</section>
 
+</section>
 
      {/* SERVICES & PRICING SECTION */}
 <section id="services" className="relative py-14 md:py-28 px-6 bg-[#050816] text-white">
@@ -680,11 +658,6 @@ export default function App() {
 </div>
 
   </div>
-  <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-  <div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
 </section>   
 {/* HOW IT WORKS */}
 <section className="relative px-8 py-32 bg-gradient-to-b from-black/10 to-black/30 overflow-hidden">
@@ -797,11 +770,7 @@ export default function App() {
     </div>
 
   </div>
-<div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-<div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-<div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
+
 </section>
   
       {/* FAQ */}
@@ -847,10 +816,7 @@ export default function App() {
               </div>
             ))}
 
-          </div><div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-          <div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
+          </div>
 
         </div>
       </section>
@@ -880,11 +846,6 @@ export default function App() {
           </a>
 
         </div>
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-        <div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
       </section>
       {/* CASE STUDIES */}
 <section
@@ -1010,11 +971,6 @@ export default function App() {
     </div>
 
   </div>
-  <div className="w-full h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent"></div>
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
-  <div className="absolute text-[180px] font-black text-white/[0.02] top-10 right-10 select-none">
-  AI
-</div>
 
 </section>
 
@@ -1177,5 +1133,9 @@ export default function App() {
       className="max-w-full max-h-full rounded-2xl"
     />
   </div>
-      )}
+)}
+
+</div>
+);
 }
+
