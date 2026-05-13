@@ -392,6 +392,156 @@ export default function App() {
           </div>
         </div>
         </section>
+     {/* SERVICES & PRICING SECTION */}
+<section id="services" className="relative py-24 px-6 bg-[#050816] text-white">
+  <div className="max-w-7xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        AI Automation Services
+      </h2>
+      <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+        Helping businesses automate customer enquiries, bookings,
+        follow-ups and lead generation using AI & WhatsApp automation.
+      </p>
+    </div>
+
+    {/* Pricing Cards */}
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* REAL ESTATE */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
+        <h3 className="text-2xl font-bold mb-4 text-yellow-400">
+          Real Estate
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          AI chatbots & automation systems for property agencies.
+        </p>
+
+        <div className="mb-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Starter Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R2,500
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ AI Website Chatbot</li>
+            <li>✔ Lead Capture Forms</li>
+            <li>✔ WhatsApp Notifications</li>
+            <li>✔ FAQ Automation</li>
+          </ul>
+        </div>
+
+        <div className="border-t border-white/10 pt-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Growth Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R5,000
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ Viewing Bookings</li>
+            <li>✔ CRM Integration</li>
+            <li>✔ Email Automation</li>
+            <li>✔ Lead Tracking</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* CAR DEALERSHIPS */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
+        <h3 className="text-2xl font-bold mb-4 text-cyan-400">
+          Car Dealerships
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          AI systems for vehicle enquiries and customer follow-ups.
+        </p>
+
+        <div className="mb-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Starter Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R3,000
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ Vehicle Enquiry Bot</li>
+            <li>✔ Lead Forms</li>
+            <li>✔ WhatsApp Alerts</li>
+            <li>✔ Instant Responses</li>
+          </ul>
+        </div>
+
+        <div className="border-t border-white/10 pt-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Premium Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R6,500
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ AI Sales Assistant</li>
+            <li>✔ CRM Integration</li>
+            <li>✔ Test Drive Scheduling</li>
+            <li>✔ Automated Follow-Ups</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* CLINICS */}
+      <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md hover:scale-105 transition duration-300 shadow-2xl">
+        <h3 className="text-2xl font-bold mb-4 text-pink-400">
+          Clinics & Beauty
+        </h3>
+
+        <p className="text-gray-400 mb-6">
+          Booking and customer automation for clinics & salons.
+        </p>
+
+        <div className="mb-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Basic Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R2,500
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ AI Booking Assistant</li>
+            <li>✔ FAQ Automation</li>
+            <li>✔ Appointment Requests</li>
+            <li>✔ After-Hours Replies</li>
+          </ul>
+        </div>
+
+        <div className="border-t border-white/10 pt-6">
+          <h4 className="text-xl font-semibold mb-2">
+            Advanced Package
+          </h4>
+          <p className="text-3xl font-bold mb-4">
+            R5,500
+          </p>
+
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ WhatsApp Reminders</li>
+            <li>✔ Follow-Up Automation</li>
+            <li>✔ Cancellation Handling</li>
+            <li>✔ Google Review Requests</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>   
 {/* HOW IT WORKS */}
 <section className="px-8 py-28 bg-black/20">
 
