@@ -939,11 +939,11 @@ export default function App() {
   >
 
     {/* Close Button */}
-    <button
-      className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-cyan-400 transition"
-    >
-      ×
-    </button>
+<button
+  className="absolute top-6 right-6 text-white text-4xl font-bold hover:text-cyan-400 transition"
+>
+x
+</button>
 
     {/* Enlarged Image */}
     <img
