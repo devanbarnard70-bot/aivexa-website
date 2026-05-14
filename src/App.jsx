@@ -112,10 +112,7 @@ const declineCookies = () => {
               Services
             </a>
 
-            <a href="#portfolio" className="hover:text-cyan-400 transition duration-300">
-              Portfolio
-            </a>
-
+            
             <a href="#faq" className="hover:text-cyan-400 transition duration-300">
               FAQ
             </a>
