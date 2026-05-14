@@ -1009,6 +1009,56 @@ export default function App() {
               <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.3V24h-4v-7.4c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8z"/>
             </svg>
           </a>
+          {/* Facebook */}
+<a
+  href="https://facebook.com/officialaivexa"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition-all duration-300 p-4 rounded-2xl"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-6 h-6"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M22 12.07C22 6.477 17.523 2 11.93 2S2 6.477 2 12.07c0 5.017 3.657 9.178 8.438 9.93v-7.03H7.898v-2.9h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.9h-2.33V22c4.78-.752 8.437-4.913 8.437-9.93z"/>
+  </svg>
+</a>
+
+{/* Instagram */}
+<a
+  href="https://instagram.com/officialaivexa"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition-all duration-300 p-4 rounded-2xl"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-6 h-6"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.322 4 20 5.678 20 7.75v8.5C20 18.322 18.322 20 16.25 20h-8.5C5.678 20 4 18.322 4 16.25v-8.5C4 5.678 5.678 4 7.75 4zm8.75 1a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+  </svg>
+</a>
+
+{/* YouTube */}
+<a
+  href="https://youtube.com/@officialaivexa"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition-all duration-300 p-4 rounded-2xl"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-6 h-6"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M23.498 6.186a2.997 2.997 0 00-2.11-2.12C19.548 3.5 12 3.5 12 3.5s-7.548 0-9.388.566a2.997 2.997 0 00-2.11 2.12C0 8.035 0 12 0 12s0 3.965.502 5.814a2.997 2.997 0 002.11 2.12C4.452 20.5 12 20.5 12 20.5s7.548 0 9.388-.566a2.997 2.997 0 002.11-2.12C24 15.965 24 12 24 12s0-3.965-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+  </svg>
+</a>
 
         </div>
       </div>
