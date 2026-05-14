@@ -1,45 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CookiePolicy from "./pages/CookiePolicy";
-import {
-  FaInstagram,
-  FaFacebook,
-  FaYoutube,
-  FaLinkedin,
-} from "react-icons/fa";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
-  useEffect(() => {
-  const banner = document.getElementById("cookie-banner");
-
-  if (localStorage.getItem("cookieConsent")) {
-    banner.style.display = "none";
-  }
-
-  document
-    .getElementById("accept-cookies")
-    ?.addEventListener("click", () => {
-      localStorage.setItem("cookieConsent", "accepted");
-      banner.style.display = "none";
-    });
-
-  document
-    .getElementById("decline-cookies")
-    ?.addEventListener("click", () => {
-      localStorage.setItem("cookieConsent", "declined");
-      banner.style.display = "none";
-    });
-}, []);<BrowserRouter>
-  <Routes>
-    <Route path="/" element={<YourHomePage />} />
-    <Route path="/cookie-policy" element={<CookiePolicy />} />
-  </Routes>
-</BrowserRouter>
   return (
-    
-    
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
       {/* Animated Background */}
 <div className="absolute inset-0 overflow-hidden">
@@ -130,7 +94,11 @@ export default function App() {
               Services
             </a>
 
-                       <a href="#faq" className="hover:text-cyan-400 transition duration-300">
+            <a href="#portfolio" className="hover:text-cyan-400 transition duration-300">
+              Portfolio
+            </a>
+
+            <a href="#faq" className="hover:text-cyan-400 transition duration-300">
               FAQ
             </a>
 
@@ -492,44 +460,7 @@ export default function App() {
 
     <p className="text-gray-400 mb-6">
       AI chatbots & automation systems for property agencies.
-          </p>
-          {/* PROBLEM → SOLUTION → RESULT */}
-<div className="space-y-4 mb-6">
-
-  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
-    <p className="text-red-400 font-semibold mb-2">
-      Problem
     </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Missing leads, slow customer replies, and manual admin tasks
-      causing lost sales opportunities.
-    </p>
-  </div>
-
-  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
-    <p className="text-cyan-400 font-semibold mb-2">
-      Aivexa Solution
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      AI chatbots, WhatsApp automation, lead capture systems,
-      and CRM workflows that automate customer communication 24/7.
-    </p>
-  </div>
-
-  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
-    <p className="text-green-400 font-semibold mb-2">
-      Result
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Faster response times, more qualified leads,
-      reduced manual work, and improved customer conversions.
-    </p>
-  </div>
-
-</div>
 
     <div className="mb-8">
 
@@ -599,43 +530,7 @@ export default function App() {
     <p className="text-gray-300 mb-6">
       AI systems for vehicle enquiries and customer follow-ups.
     </p>
-{/* PROBLEM → SOLUTION → RESULT */}
-<div className="space-y-4 mb-6">
 
-  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
-    <p className="text-red-400 font-semibold mb-2">
-      Problem
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Missing leads, slow customer replies, and manual admin tasks
-      causing lost sales opportunities.
-    </p>
-  </div>
-
-  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
-    <p className="text-cyan-400 font-semibold mb-2">
-      Aivexa Solution
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      AI chatbots, WhatsApp automation, lead capture systems,
-      and CRM workflows that automate customer communication 24/7.
-    </p>
-  </div>
-
-  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
-    <p className="text-green-400 font-semibold mb-2">
-      Result
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Faster response times, more qualified leads,
-      reduced manual work, and improved customer conversions.
-    </p>
-  </div>
-
-</div>
     <div className="mb-8">
 
       <div className="flex justify-between items-center mb-2">
@@ -704,43 +599,7 @@ export default function App() {
     <p className="text-gray-400 mb-6">
       Booking and customer automation for clinics & salons.
     </p>
-{/* PROBLEM → SOLUTION → RESULT */}
-<div className="space-y-4 mb-6">
 
-  <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
-    <p className="text-red-400 font-semibold mb-2">
-      Problem
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Missing leads, slow customer replies, and manual admin tasks
-      causing lost sales opportunities.
-    </p>
-  </div>
-
-  <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-2xl p-4">
-    <p className="text-cyan-400 font-semibold mb-2">
-      Aivexa Solution
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      AI chatbots, WhatsApp automation, lead capture systems,
-      and CRM workflows that automate customer communication 24/7.
-    </p>
-  </div>
-
-  <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-4">
-    <p className="text-green-400 font-semibold mb-2">
-      Result
-    </p>
-
-    <p className="text-gray-300 text-sm leading-relaxed">
-      Faster response times, more qualified leads,
-      reduced manual work, and improved customer conversions.
-    </p>
-  </div>
-
-</div>
     <div className="mb-8">
 
       <div className="flex justify-between items-center mb-2">
@@ -1133,49 +992,73 @@ export default function App() {
           automate conversations, generate leads, and improve customer experience.
         </p>
 
-        <div className="flex items-center gap-4 mt-6">
+        <div className="flex gap-4 mt-6">
 
-  {/* Instagram */}
-  <a
-    href="https://instagram.com/officialaivexa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/5 hover:bg-pink-500/20 border border-white/10 hover:border-pink-400 transition p-3 rounded-xl text-gray-300 hover:text-pink-400"
-  >
-    <FaInstagram className="w-6 h-6" />
-  </a>
+          <a
+            href="https://linkedin.com/company/officialaivexa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition p-3 rounded-xl"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.3V24h-4v-7.4c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8z"/>
+            </svg>
+          </a>
 
-  {/* Facebook */}
-  <a
-    href="https://facebook.com/aivexa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/5 hover:bg-blue-500/20 border border-white/10 hover:border-blue-400 transition p-3 rounded-xl text-gray-300 hover:text-blue-400"
-  >
-    <FaFacebook className="w-6 h-6" />
-  </a>
+        </div>
+      </div>
 
-  {/* YouTube */}
-  <a
-    href="https://youtube.com/@officialaivexa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/5 hover:bg-red-500/20 border border-white/10 hover:border-red-400 transition p-3 rounded-xl text-gray-300 hover:text-red-400"
-  >
-    <FaYoutube className="w-6 h-6" />
-  </a>
+    {/* Quick Links */}
+<div>
+  <h3 className="text-xl font-semibold mb-6">
+    Quick Links
+  </h3>
 
-  {/* LinkedIn */}
-  <a
-    href="https://linkedin.com/company/officialaivexa"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/5 hover:bg-cyan-500/20 border border-white/10 hover:border-cyan-400 transition p-3 rounded-xl text-gray-300 hover:text-cyan-400"
-  >
-    <FaLinkedin className="w-6 h-6" />
-  </a>
+  <div className="flex flex-col gap-4 text-gray-400">
+
+    <a
+      href="#services"
+      className="hover:text-cyan-400 transition"
+    >
+      Services
+    </a>
+
+    <a
+      href="#about"
+      className="hover:text-cyan-400 transition"
+    >
+      About
+    </a>
+
+    <a
+      href="#contact"
+      className="hover:text-cyan-400 transition"
+    >
+      Contact
+    </a>
+
+    <a
+      href="/privacy"
+      className="hover:text-cyan-400 transition"
+    >
+      Privacy Policy
+    </a>
+
+    <a
+      href="/terms"
+      className="hover:text-cyan-400 transition"
+    >
+      Terms of Service
+    </a>
+
+  </div>
 </div>
-</div>
+
       {/* Contact */}
       <div>
         <h3 className="text-xl font-semibold mb-6">
@@ -1238,49 +1121,21 @@ export default function App() {
   </svg>
 </a>
 
-      {/* IMAGE POPUP */}
-      {selectedImage !== "" && (
-        <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
-          onClick={() => setSelectedImage("")}
-        >
-          <img
-            src={selectedImage}
-            alt="Expanded Demo"
-            className="max-w-full max-h-full rounded-2xl"
-          />
-        </div>
-      )}
+{/* IMAGE POPUP */}
+{selectedImage !== "" && (
+  <div
+    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6"
+    onClick={() => setSelectedImage("")}
+  >
+    <img
+      src={selectedImage}
+      alt="Expanded Demo"
+      className="max-w-full max-h-full rounded-2xl"
+    />
+  </div>
+)}
 
-
-      {/* COOKIE BANNER START */}
-      <div
-        id="cookie-banner"
-        className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] max-w-md bg-black/90 p-5 rounded-2xl shadow-2xl z-50"
-      >
-        <p className="text-sm text-white mb-4">
-          We use cookies to improve your experience on our website.
-        </p>
-
-        <div className="flex gap-3">
-          <button
-            id="accept-cookies"
-            className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-lg"
-          >
-            Accept
-          </button>
-
-          <button
-            id="decline-cookies"
-            className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg"
-          >
-            Decline
-          </button>
-        </div>
-      </div>
-      {/* COOKIE BANNER END */}
-
-
-    </div>
-  );
+</div>
+);
 }
+
