@@ -446,169 +446,170 @@ const declineCookies = () => {
 
 </section>
 
-     {/* SERVICES & PRICING SECTION */}
-<section id="services" className="relative py-14 md:py-28 px-6 bg-[#050816] text-white">
-<div className="w-full max-w-[1600px] mx-auto flex flex-col items-center px-6 lg:px-12">
+  {/* SERVICES & PRICING SECTION */}
+<section
+  id="services"
+  className="relative py-16 md:py-28 px-6 bg-[#050816] text-white"
+>
+  <div className="max-w-7xl mx-auto">
 
     {/* Heading */}
     <div className="text-center mb-16">
       <h2 className="text-4xl md:text-5xl font-bold mb-4">
         AI Automation Services
       </h2>
-      <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-        Helping businesses automate customer enquiries, bookings,
-        follow-ups and lead generation using AI & WhatsApp automation.
-      </p>
-    </div>   
-      </div>  
-{/* Pricing Cards */}
-<div className="grid w-full max-w-[1400px] mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch justify-center">
 
-<div className="grid w-full max-w-[1400px] mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch justify-center">
-
-  {/* OFFER 1 */}
-  <motion.div
-    whileHover={{ scale: 1.03, y: -10 }}
-    transition={{ duration: 0.3 }}
-className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
-  >
-    <span className="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
-      SERVICE 1
-    </span>
-
-    <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
-      Lead Generation Automation Setup
-    </h3>
-
-    <p className="text-gray-300 mb-6">
-      Automate lead capture, notifications, follow-ups and lead tracking
-      so no opportunity gets missed.
-    </p>
-
-    <ul className="space-y-3 text-gray-300 mb-8">
-      <li>✓ Website Form Automation</li>
-      <li>✓ WhatsApp Enquiry Automation</li>
-      <li>✓ Email Enquiry Automation</li>
-      <li>✓ Google Sheets / CRM Syncing</li>
-      <li>✓ Lead Routing & Notifications</li>
-      <li>✓ Automated Follow-Ups</li>
-    </ul>
-
-    <div className="bg-white/5 rounded-2xl p-5 mb-4">
-      <h4 className="text-gray-400 mb-2">Starter</h4>
-      <p className="text-4xl font-bold text-cyan-400">
-        R2,500
+      <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+        Helping businesses automate customer enquiries, lead generation,
+        follow-ups, and qualification through practical AI automation systems.
       </p>
     </div>
 
-    <div className="bg-white/5 rounded-2xl p-5">
-      <h4 className="text-gray-400 mb-2">Growth</h4>
-      <p className="text-4xl font-bold text-cyan-400">
-        R5,000
-      </p>
+    {/* Pricing Cards */}
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      {/* OFFER 1 */}
+      <motion.div
+        whileHover={{ scale: 1.03, y: -10 }}
+        transition={{ duration: 0.3 }}
+        className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-xl"
+      >
+        <span className="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
+          SERVICE 1
+        </span>
+
+        <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
+          Lead Generation Automation Setup
+        </h3>
+
+        <p className="text-gray-300 mb-6">
+          Automate lead capture, notifications, follow-ups and lead tracking so
+          no opportunity gets missed.
+        </p>
+
+        <ul className="space-y-3 text-gray-300 mb-8">
+          <li>✓ Website Form Automation</li>
+          <li>✓ WhatsApp Enquiry Automation</li>
+          <li>✓ Email Enquiry Automation</li>
+          <li>✓ Google Sheets / CRM Syncing</li>
+          <li>✓ Lead Routing & Notifications</li>
+          <li>✓ Automated Follow-Ups</li>
+        </ul>
+
+        <div className="bg-white/5 rounded-2xl p-5 mb-4">
+          <h4 className="text-gray-400 mb-2">Starter</h4>
+          <p className="text-4xl font-bold text-cyan-400">
+            R2,500
+          </p>
+        </div>
+
+        <div className="bg-white/5 rounded-2xl p-5">
+          <h4 className="text-gray-400 mb-2">Growth</h4>
+          <p className="text-4xl font-bold text-cyan-400">
+            R5,000
+          </p>
+        </div>
+
+        <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+          Monthly Retainer:
+          <strong> R1,250/month</strong>
+        </div>
+      </motion.div>
+
+      {/* OFFER 2 */}
+      <motion.div
+        whileHover={{ scale: 1.03, y: -10 }}
+        transition={{ duration: 0.3 }}
+        className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-xl"
+      >
+        <span className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">
+          SERVICE 2
+        </span>
+
+        <h3 className="text-2xl font-bold mt-5 mb-4 text-purple-400">
+          AI Lead Qualification Chatbot
+        </h3>
+
+        <p className="text-gray-300 mb-6">
+          AI chatbot that answers questions, qualifies leads and routes
+          opportunities automatically.
+        </p>
+
+        <ul className="space-y-3 text-gray-300 mb-8">
+          <li>✓ FAQ Automation</li>
+          <li>✓ Lead Qualification Questions</li>
+          <li>✓ Contact Capture</li>
+          <li>✓ Lead Routing</li>
+          <li>✓ CRM / Google Sheets Integration</li>
+          <li>✓ Website Chatbot Integration</li>
+        </ul>
+
+        <div className="bg-white/5 rounded-2xl p-5 mb-4">
+          <h4 className="text-gray-400 mb-2">Basic</h4>
+          <p className="text-4xl font-bold text-purple-400">
+            R3,500
+          </p>
+        </div>
+
+        <div className="bg-white/5 rounded-2xl p-5">
+          <h4 className="text-gray-400 mb-2">Growth</h4>
+          <p className="text-4xl font-bold text-purple-400">
+            R6,000
+          </p>
+        </div>
+
+        <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+          Monthly Retainer:
+          <strong> R1,250/month</strong>
+        </div>
+      </motion.div>
+
+      {/* BUNDLE */}
+      <motion.div
+        whileHover={{ scale: 1.03, y: -10 }}
+        transition={{ duration: 0.3 }}
+        className="h-full bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-xl"
+      >
+        <span className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm font-semibold">
+          BUNDLE OPTION
+        </span>
+
+        <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
+          AIVEXA Lead Conversion System
+        </h3>
+
+        <p className="text-gray-300 mb-6">
+          Combine both services into one complete lead conversion workflow.
+        </p>
+
+        <ul className="space-y-3 text-gray-300 mb-8">
+          <li>✓ Everything in Service 1</li>
+          <li>✓ Everything in Service 2</li>
+          <li>✓ Lead Capture + Qualification</li>
+          <li>✓ CRM / Google Sheets Syncing</li>
+          <li>✓ Follow-Up Automation</li>
+          <li>✓ Higher Conversion Potential</li>
+        </ul>
+
+        <div className="bg-white/5 rounded-2xl p-5">
+          <h4 className="text-gray-400 mb-2">
+            Bundle Price
+          </h4>
+
+          <p className="text-4xl font-bold text-cyan-400">
+            R5,000 – R6,000
+          </p>
+        </div>
+
+        <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+          Monthly Retainer:
+          <strong> R1,250/month</strong>
+        </div>
+      </motion.div>
+
     </div>
-
-    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
-      Monthly Retainer:
-      <strong> R1,250/month</strong>
-    </div>
-  </motion.div>
-
-  {/* OFFER 2 */}
-  <motion.div
-    whileHover={{ scale: 1.03, y: -10 }}
-    transition={{ duration: 0.3 }}
-  className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
-  >
-    <span className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">
-      SERVICE 2
-    </span>
-
-    <h3 className="text-2xl font-bold mt-5 mb-4 text-purple-400">
-      AI Lead Qualification Chatbot
-    </h3>
-
-    <p className="text-gray-300 mb-6">
-      AI chatbot that answers questions, qualifies leads and routes
-      opportunities automatically.
-    </p>
-
-    <ul className="space-y-3 text-gray-300 mb-8">
-      <li>✓ FAQ Automation</li>
-      <li>✓ Lead Qualification Questions</li>
-      <li>✓ Contact Capture</li>
-      <li>✓ Lead Routing</li>
-      <li>✓ CRM / Google Sheets Integration</li>
-      <li>✓ Website Chatbot Integration</li>
-    </ul>
-
-    <div className="bg-white/5 rounded-2xl p-5 mb-4">
-      <h4 className="text-gray-400 mb-2">Basic</h4>
-      <p className="text-4xl font-bold text-purple-400">
-        R3,500
-      </p>
-    </div>
-
-    <div className="bg-white/5 rounded-2xl p-5">
-      <h4 className="text-gray-400 mb-2">Growth</h4>
-      <p className="text-4xl font-bold text-purple-400">
-        R6,000
-      </p>
-    </div>
-
-    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
-      Monthly Retainer:
-      <strong> R1,250/month</strong>
-    </div>
-  </motion.div>
-
-  {/* BUNDLE */}
-  <motion.div
-    whileHover={{ scale: 1.03, y: -10 }}
-    transition={{ duration: 0.3 }}
-   className="h-full bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
-  >
-    <span className="bg-cyan-500 text-black px-4 py-2 rounded-full text-sm font-semibold">
-      BUNDLE OPTION
-    </span>
-
-    <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
-      AIVEXA Lead Conversion System
-    </h3>
-
-    <p className="text-gray-300 mb-6">
-      Combine both services into one complete lead conversion workflow.
-    </p>
-
-    <ul className="space-y-3 text-gray-300 mb-8">
-      <li>✓ Everything in Service 1</li>
-      <li>✓ Everything in Service 2</li>
-      <li>✓ Lead Capture + Qualification</li>
-      <li>✓ CRM / Google Sheets Syncing</li>
-      <li>✓ Follow-Up Automation</li>
-      <li>✓ Higher Conversion Potential</li>
-    </ul>
-
-    <div className="bg-white/5 rounded-2xl p-5">
-      <h4 className="text-gray-400 mb-2">
-        Bundle Price
-      </h4>
-
-      <p className="text-4xl font-bold text-cyan-400">
-        R5,000 – R6,000
-      </p>
-    </div>
-
-    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
-      Monthly Retainer:
-      <strong> R1,250/month</strong>
-    </div>
-  </motion.div>
-
-</div>
-
   </div>
-</section>   
+</section>
 {/* HOW IT WORKS */}
 <section className="relative px-8 py-32 bg-gradient-to-b from-black/10 to-black/30 overflow-hidden">
 
