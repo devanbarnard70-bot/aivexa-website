@@ -459,214 +459,149 @@ const declineCookies = () => {
         Helping businesses automate customer enquiries, bookings,
         follow-ups and lead generation using AI & WhatsApp automation.
       </p>
-    </div>
+    </div>   
+      </div>  
 {/* Pricing Cards */}
 <div className="grid md:grid-cols-3 gap-8">
 
-  {/* REAL ESTATE */}
+ <div className="grid md:grid-cols-3 gap-8">
+
+  {/* OFFER 1 */}
   <motion.div
-    whileHover={{ scale: 1.04, y: -10 }}
+    whileHover={{ scale: 1.03, y: -10 }}
     transition={{ duration: 0.3 }}
-    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:border-yellow-400"
+    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
   >
-    <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-      Real Estate
-    </h3>
+    <span className="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
+      SERVICE 1
+    </span>
 
-    <p className="text-gray-400 mb-6">
-      AI chatbots & automation systems for property agencies.
-    </p>
-
-    <div className="mb-8">
-
-      <div className="flex justify-between items-center mb-2">
-        <h4 className="text-xl font-semibold">
-          Starter Package
-        </h4>
-
-        <span className="text-sm text-cyan-300">
-          Setup + Retainer
-        </span>
-      </div>
-
-      <p className="text-3xl font-bold">
-        R2,500 Setup
-      </p>
-
-      <p className="text-cyan-400 text-lg mb-4">
-        + R750/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-300">
-        <li>✔ AI Website Chatbot</li>
-        <li>✔ Lead Capture Forms</li>
-        <li>✔ WhatsApp Notifications</li>
-        <li>✔ FAQ Automation</li>
-        <li>✔ Monthly support & updates</li>
-      </ul>
-
-    </div>
-
-    <div className="border-t border-white/10 pt-6">
-
-      <h4 className="text-xl font-semibold mb-2">
-        Growth Package
-      </h4>
-
-      <p className="text-3xl font-bold">
-        R5,000 Setup
-      </p>
-
-      <p className="text-cyan-400 text-lg mb-4">
-        + R1500/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-300">
-        <li>✔ Viewing Bookings</li>
-        <li>✔ CRM Integration</li>
-        <li>✔ Email Automation</li>
-        <li>✔ Lead Tracking</li>
-        <li>✔ Automated follow-ups</li>
-      </ul>
-
-    </div>
-  </motion.div>
-
-  {/* CAR DEALERSHIPS */}
-  <motion.div
-    whileHover={{ scale: 1.05, y: -12 }}
-    transition={{ duration: 0.3 }}
-    className="bg-gradient-to-b from-cyan-500/20 to-purple-500/20 border border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-[0_0_50px_rgba(0,255,255,0.15)]"
-  >
-    <h3 className="text-2xl font-bold mb-4 text-cyan-400">
-      Car Dealerships
+    <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
+      Lead Generation Automation Setup
     </h3>
 
     <p className="text-gray-300 mb-6">
-      AI systems for vehicle enquiries and customer follow-ups.
+      Automate lead capture, notifications, follow-ups and lead tracking
+      so no opportunity gets missed.
     </p>
 
-    <div className="mb-8">
+    <ul className="space-y-3 text-gray-300 mb-8">
+      <li>✓ Website Form Automation</li>
+      <li>✓ WhatsApp Enquiry Automation</li>
+      <li>✓ Email Enquiry Automation</li>
+      <li>✓ Google Sheets / CRM Syncing</li>
+      <li>✓ Lead Routing & Notifications</li>
+      <li>✓ Automated Follow-Ups</li>
+    </ul>
 
-      <div className="flex justify-between items-center mb-2">
-        <h4 className="text-xl font-semibold">
-          Starter Package
-        </h4>
-
-        <span className="text-sm text-cyan-300">
-          Setup + Retainer
-        </span>
-      </div>
-
-      <p className="text-3xl font-bold">
-        R3,000 Setup
+    <div className="bg-white/5 rounded-2xl p-5 mb-4">
+      <h4 className="text-gray-400 mb-2">Starter</h4>
+      <p className="text-4xl font-bold text-cyan-400">
+        R2,500
       </p>
-
-      <p className="text-cyan-300 text-lg mb-4">
-        + R1000/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-200">
-        <li>✔ Vehicle Enquiry Bot</li>
-        <li>✔ Lead Forms</li>
-        <li>✔ WhatsApp Alerts</li>
-        <li>✔ Instant Responses</li>
-        <li>✔ Monthly optimization</li>
-      </ul>
-
     </div>
 
-    <div className="border-t border-white/10 pt-6">
-
-      <h4 className="text-xl font-semibold mb-2">
-        Premium Package
-      </h4>
-
-      <p className="text-3xl font-bold">
-        R6,500 Setup
+    <div className="bg-white/5 rounded-2xl p-5">
+      <h4 className="text-gray-400 mb-2">Growth</h4>
+      <p className="text-4xl font-bold text-cyan-400">
+        R5,000
       </p>
+    </div>
 
-      <p className="text-cyan-300 text-lg mb-4">
-        + R2000/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-200">
-        <li>✔ AI Sales Assistant</li>
-        <li>✔ CRM Integration</li>
-        <li>✔ Test Drive Scheduling</li>
-        <li>✔ Automated Follow-Ups</li>
-        <li>✔ Lead pipeline tracking</li>
-      </ul>
-
+    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+      Monthly Retainer:
+      <strong> R1,250/month</strong>
     </div>
   </motion.div>
 
-  {/* CLINICS */}
+  {/* OFFER 2 */}
   <motion.div
-    whileHover={{ scale: 1.04, y: -10 }}
+    whileHover={{ scale: 1.03, y: -10 }}
     transition={{ duration: 0.3 }}
-    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:border-pink-400"
+    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
   >
-    <h3 className="text-2xl font-bold mb-4 text-pink-400">
-      Clinics & Beauty
+    <span className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">
+      SERVICE 2
+    </span>
+
+    <h3 className="text-2xl font-bold mt-5 mb-4 text-purple-400">
+      AI Lead Qualification Chatbot
     </h3>
 
-    <p className="text-gray-400 mb-6">
-      Booking and customer automation for clinics & salons.
+    <p className="text-gray-300 mb-6">
+      AI chatbot that answers questions, qualifies leads and routes
+      opportunities automatically.
     </p>
 
-    <div className="mb-8">
+    <ul className="space-y-3 text-gray-300 mb-8">
+      <li>✓ FAQ Automation</li>
+      <li>✓ Lead Qualification Questions</li>
+      <li>✓ Contact Capture</li>
+      <li>✓ Lead Routing</li>
+      <li>✓ CRM / Google Sheets Integration</li>
+      <li>✓ Website Chatbot Integration</li>
+    </ul>
 
-      <div className="flex justify-between items-center mb-2">
-        <h4 className="text-xl font-semibold">
-          Basic Package
-        </h4>
-
-        <span className="text-sm text-pink-300">
-          Setup + Retainer
-        </span>
-      </div>
-
-      <p className="text-3xl font-bold">
-        R2,500 Setup
+    <div className="bg-white/5 rounded-2xl p-5 mb-4">
+      <h4 className="text-gray-400 mb-2">Basic</h4>
+      <p className="text-4xl font-bold text-purple-400">
+        R3,500
       </p>
-
-      <p className="text-pink-300 text-lg mb-4">
-        + R1000/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-300">
-        <li>✔ AI Booking Assistant</li>
-        <li>✔ FAQ Automation</li>
-        <li>✔ Appointment Requests</li>
-        <li>✔ After-Hours Replies</li>
-        <li>✔ Monthly maintenance</li>
-      </ul>
-
     </div>
 
-    <div className="border-t border-white/10 pt-6">
+    <div className="bg-white/5 rounded-2xl p-5">
+      <h4 className="text-gray-400 mb-2">Growth</h4>
+      <p className="text-4xl font-bold text-purple-400">
+        R6,000
+      </p>
+    </div>
 
-      <h4 className="text-xl font-semibold mb-2">
-        Advanced Package
+    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+      Monthly Retainer:
+      <strong> R1,250/month</strong>
+    </div>
+  </motion.div>
+
+  {/* BUNDLE */}
+  <motion.div
+    whileHover={{ scale: 1.03, y: -10 }}
+    transition={{ duration: 0.3 }}
+    className="bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
+  >
+    <span className="bg-cyan-500 text-black px-4 py-2 rounded-full text-sm font-semibold">
+      BUNDLE OPTION
+    </span>
+
+    <h3 className="text-2xl font-bold mt-5 mb-4 text-cyan-400">
+      AIVEXA Lead Conversion System
+    </h3>
+
+    <p className="text-gray-300 mb-6">
+      Combine both services into one complete lead conversion workflow.
+    </p>
+
+    <ul className="space-y-3 text-gray-300 mb-8">
+      <li>✓ Everything in Service 1</li>
+      <li>✓ Everything in Service 2</li>
+      <li>✓ Lead Capture + Qualification</li>
+      <li>✓ CRM / Google Sheets Syncing</li>
+      <li>✓ Follow-Up Automation</li>
+      <li>✓ Higher Conversion Potential</li>
+    </ul>
+
+    <div className="bg-white/5 rounded-2xl p-5">
+      <h4 className="text-gray-400 mb-2">
+        Bundle Price
       </h4>
 
-      <p className="text-3xl font-bold">
-        R5,500 Setup
+      <p className="text-4xl font-bold text-cyan-400">
+        R5,000 – R6,000
       </p>
+    </div>
 
-      <p className="text-pink-300 text-lg mb-4">
-        + R2000/pm Retainer
-      </p>
-
-      <ul className="space-y-2 text-gray-300">
-        <li>✔ WhatsApp Reminders</li>
-        <li>✔ Follow-Up Automation</li>
-        <li>✔ Cancellation Handling</li>
-        <li>✔ Google Review Requests</li>
-        <li>✔ CRM integrations</li>
-      </ul>
-
+    <div className="border-t border-white/10 mt-6 pt-6 text-gray-300">
+      Monthly Retainer:
+      <strong> R1,250/month</strong>
     </div>
   </motion.div>
 
