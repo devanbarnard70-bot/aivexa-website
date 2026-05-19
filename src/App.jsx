@@ -448,7 +448,7 @@ const declineCookies = () => {
 
      {/* SERVICES & PRICING SECTION */}
 <section id="services" className="relative py-14 md:py-28 px-6 bg-[#050816] text-white">
-<div className="w-full max-w-[1600px] mx-auto px-4 lg:px-8">
+<div className="w-full max-w-[1600px] mx-auto flex flex-col items-center px-6 lg:px-12">
 
     {/* Heading */}
     <div className="text-center mb-16">
@@ -462,9 +462,9 @@ const declineCookies = () => {
     </div>   
       </div>  
 {/* Pricing Cards */}
-<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full items-stretch">
+<div className="grid w-full max-w-[1400px] mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch justify-center">
 
-<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full items-stretch">
+<div className="grid w-full max-w-[1400px] mx-auto grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch justify-center">
 
   {/* OFFER 1 */}
   <motion.div
