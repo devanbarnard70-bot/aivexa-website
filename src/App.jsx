@@ -448,7 +448,7 @@ const declineCookies = () => {
 
      {/* SERVICES & PRICING SECTION */}
 <section id="services" className="relative py-14 md:py-28 px-6 bg-[#050816] text-white">
-  <div className="max-w-7xl mx-auto">
+<div className="w-full max-w-[1600px] mx-auto px-4 lg:px-8">
 
     {/* Heading */}
     <div className="text-center mb-16">
@@ -462,15 +462,15 @@ const declineCookies = () => {
     </div>   
       </div>  
 {/* Pricing Cards */}
-<div className="grid md:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full items-stretch">
 
- <div className="grid md:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full items-stretch">
 
   {/* OFFER 1 */}
   <motion.div
     whileHover={{ scale: 1.03, y: -10 }}
     transition={{ duration: 0.3 }}
-    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
+className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
   >
     <span className="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
       SERVICE 1
@@ -518,7 +518,7 @@ const declineCookies = () => {
   <motion.div
     whileHover={{ scale: 1.03, y: -10 }}
     transition={{ duration: 0.3 }}
-    className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
+  className="h-full bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
   >
     <span className="bg-purple-600 px-4 py-2 rounded-full text-sm font-semibold">
       SERVICE 2
@@ -566,7 +566,7 @@ const declineCookies = () => {
   <motion.div
     whileHover={{ scale: 1.03, y: -10 }}
     transition={{ duration: 0.3 }}
-    className="bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
+   className="h-full bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-8 backdrop-blur-md shadow-2xl"
   >
     <span className="bg-cyan-500 text-black px-4 py-2 rounded-full text-sm font-semibold">
       BUNDLE OPTION
