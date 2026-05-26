@@ -1069,10 +1069,10 @@ const declineCookies = () => {
         <div className="flex flex-col gap-4 text-gray-400">
 
           <a
-            href="mailto:officalaivexa@outlook.com"
+            href="mailto:info@aivexasolutions.com"
             className="hover:text-cyan-400 transition"
           >
-            officalaivexa@outlook.com
+            info@aivexasolutions.com
           </a>
 
           <a
