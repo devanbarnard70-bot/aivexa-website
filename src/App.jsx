@@ -523,7 +523,7 @@ export default function App() {
                 {/* ✅ WHATSAPP ADDED TO FOOTER */}
                 <a href="https://wa.me/27698585902" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">WhatsApp: +27 69 858 5902</a>
                 <a href="https://linkedin.com/company/officialaivexa" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">LinkedIn: Officialaivexa</a>
-                <p className="text-gray-500 text-sm">Port Elizabeth, South Africa</p>
+                <p className="text-gray-500 text-sm">Cape Town, South Africa</p>
               </div>
             </div>
           </div>
