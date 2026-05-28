@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import HeroBackground from "./HeroBackground";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState("");
@@ -26,33 +27,7 @@ export default function App() {
     <div className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white font-sans">
 
       {/* ── ANIMATED BACKGROUND ── */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#050816] via-[#0f172a] to-[#020617]" />
-        <motion.div
-          animate={{ y: [0, -40, 0], x: [0, 30, 0] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[120px]"
-        />
-        <motion.div
-          animate={{ y: [0, 30, 0], x: [0, -20, 0] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-[-10%] right-[-10%] w-[450px] h-[450px] bg-purple-500/20 rounded-full blur-[120px]"
-        />
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[40%] left-[35%] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px]"
-        />
-        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top_left,#06b6d4,transparent_35%),radial-gradient(circle_at_bottom_right,#8b5cf6,transparent_35%)] animate-pulse" />
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
+      <HeroBackground />
 
       {/* ── NAVBAR ── */}
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
