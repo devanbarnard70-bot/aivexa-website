@@ -9,6 +9,7 @@ import {
 import App from './App.jsx'
 import Privacy from './Privacy.jsx'
 import Terms from './Terms.jsx'
+import AIVEXALinks from './pages/AIVEXALinks.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/links" element={<AIVEXALinks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
