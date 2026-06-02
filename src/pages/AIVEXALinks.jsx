@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const links = [
-  { id: 1, label: "Book a Free Discovery Call", sublabel: "Let's talk about your business", icon: "📅", href: "https://www.aivexasolutions.com/#contact", primary: true },
+  { id: 1, label: "Book a Free Discovery Call", sublabel: "Let's talk about your business", icon: "📅", href: "https://tally.so/r/44A1Zk", primary: true },
   { id: 2, label: "Get a Free Automation Audit", sublabel: "See what can be automated in your business", icon: "🤖", href: "https://tally.so/r/b5K6y6", accent: true },
   { id: 3, label: "Visit Our Website", sublabel: "aivexasolutions.com", icon: "🌐", href: "https://aivexasolutions.com" },
   { id: 4, label: "Follow on Instagram", sublabel: "@OfficialAivexa", icon: "📸", href: "https://instagram.com/OfficialAivexa" },
