@@ -17,12 +17,10 @@ export default function App() {
 
   const acceptCookies = () => {
     localStorage.setItem("cookie_consent", "accepted");
-    setShowCookieBanner(false);
   };
 
   const declineCookies = () => {
     localStorage.setItem("cookie_consent", "declined");
-    setShowCookieBanner(false);
   };
 
   // ✅ CLOSE MENU + SCROLL TO SECTION
@@ -40,22 +38,18 @@ export default function App() {
       {/* ── ANIMATED BACKGROUND ── */}
       <HeroBackground />
 
-      {/* ══════════════════════════════════════════
-          NAVBAR — MOBILE HAMBURGER MENU ADDED
-      ══════════════════════════════════════════ */}
+      {/* NAVBAR */}
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
           <div className="flex justify-between items-center">
 
-            {/* LOGO */}
             <div className="flex items-center gap-3">
               <img src="/logo.png" alt="AIVEXA Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
               <h1 className="text-xl md:text-2xl font-bold tracking-wide text-cyan-400">AIVEXA</h1>
             </div>
 
-            {/* DESKTOP NAV LINKS */}
             <div className="hidden md:flex items-center gap-8 text-base">
-              <a href="#services" className="hover:text-cyan-400 transition duration-300">Services</a>
+              <a href="#services" className="hover:text-cyan-400 transition duration-300">AI Agents</a>
               <a href="#about" className="hover:text-cyan-400 transition duration-300">About</a>
               <a href="#faq" className="hover:text-cyan-400 transition duration-300">FAQ</a>
               <a href="#contact" className="hover:text-cyan-400 transition duration-300">Contact</a>
@@ -71,7 +65,6 @@ export default function App() {
               </motion.a>
             </div>
 
-            {/* MOBILE HAMBURGER BUTTON */}
             <button
               className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition duration-300"
               onClick={() => setMenuOpen(!menuOpen)}
@@ -83,7 +76,6 @@ export default function App() {
             </button>
           </div>
 
-          {/* MOBILE DROPDOWN MENU */}
           <AnimatePresence>
             {menuOpen && (
               <motion.div
@@ -95,7 +87,7 @@ export default function App() {
               >
                 <div className="flex flex-col gap-1 pt-4 pb-2 border-t border-white/10 mt-4">
                   {[
-                    { label: "Services", href: "#services" },
+                    { label: "AI Agents", href: "#services" },
                     { label: "About", href: "#about" },
                     { label: "FAQ", href: "#faq" },
                     { label: "Contact", href: "#contact" },
@@ -125,16 +117,13 @@ export default function App() {
         </div>
       </nav>
 
-      {/* ══════════════════════════════════════════
-          HERO — MOBILE TEXT & PADDING FIXED
-      ══════════════════════════════════════════ */}
+      {/* HERO */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="relative px-4 md:px-8 py-20 md:py-28 max-w-7xl mx-auto flex flex-col items-center justify-center text-center"
       >
-        {/* BOUNCING LOGO */}
         <motion.div
           animate={{ y: [0, -16, 0] }}
           transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
@@ -147,7 +136,6 @@ export default function App() {
           />
         </motion.div>
 
-        {/* ACCEPTING CLIENTS BADGE */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -155,25 +143,23 @@ export default function App() {
           className="mb-5 md:mb-6 inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/40 rounded-full px-4 md:px-5 py-2 text-xs md:text-sm text-cyan-300 font-medium backdrop-blur-md"
         >
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse inline-block flex-shrink-0"></span>
-          <span>Currently Accepting New Clients — Q2 2026</span>
+          <span>Currently Accepting New Clients</span>
         </motion.div>
 
-        <p className="text-cyan-400 font-semibold mb-3 md:mb-4 tracking-[2px] md:tracking-[3px] text-xs md:text-sm">AI AUTOMATION AGENCY</p>
+        <p className="text-cyan-400 font-semibold mb-3 md:mb-4 tracking-[2px] md:tracking-[3px] text-xs md:text-sm">AI SOLUTIONS COMPANY</p>
 
-        {/* HERO HEADING — SCALED FOR MOBILE */}
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 md:mb-8 max-w-6xl">
-          AI Automation That Saves Your Business{" "}
+          AI Agents That Help Your Business{" "}
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Time, Leads & Money
+            Capture More Leads & Save Time
           </span>
         </h1>
 
         <p className="text-gray-300 text-base md:text-xl leading-relaxed mb-8 md:mb-10 max-w-3xl px-2">
-          AIVEXA helps businesses automate customer communication, WhatsApp replies,
-          lead capture, and repetitive tasks using intelligent AI systems.
+          AIVEXA builds AI agents and intelligent business systems — including AIVEXA AutoAgent —
+          that handle customer communication, capture leads, and run your sales process around the clock.
         </p>
 
-        {/* HERO BUTTONS — STACK ON MOBILE */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 md:gap-4 w-full max-w-md sm:max-w-none">
           <motion.a
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 30px rgba(34,211,238,0.5)" }}
@@ -189,7 +175,7 @@ export default function App() {
             href="#services"
             className="border border-cyan-500 hover:bg-cyan-500/10 transition duration-300 px-6 md:px-8 py-3.5 md:py-4 rounded-xl text-center"
           >
-            Explore Services
+            Explore AI Agents
           </a>
           <button
             onClick={() => document.getElementById("demo-showcase")?.scrollIntoView({ behavior: "smooth" })}
@@ -200,9 +186,7 @@ export default function App() {
         </div>
       </motion.section>
 
-      {/* ══════════════════════════════════════════
-          IMPACT STATS — PADDING FIXED
-      ══════════════════════════════════════════ */}
+      {/* IMPACT STATS */}
       <section className="relative px-4 md:px-8 py-12">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
@@ -228,27 +212,24 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          DEMO SHOWCASE — PADDING & CARDS FIXED
-      ══════════════════════════════════════════ */}
+      {/* DEMO SHOWCASE */}
       <section id="demo-showcase" className="relative px-4 md:px-8 pt-16 md:pt-20 pb-10 md:pb-14 max-w-7xl mx-auto">
         <div className="text-center mb-10 md:mb-16">
-          <p className="text-cyan-400 font-semibold tracking-[2px] md:tracking-[3px] mb-3 md:mb-4 text-sm">AI AUTOMATION DEMOS</p>
+          <p className="text-cyan-400 font-semibold tracking-[2px] md:tracking-[3px] mb-3 md:mb-4 text-sm">AIVEXA AUTOAGENT DEMOS</p>
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 md:mb-6">
-            AI Automation In <span className="text-cyan-400">Action</span>
+            AI Agents In <span className="text-cyan-400">Action</span>
           </h2>
           <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
-            Explore real-world examples of AI chatbots, lead capture systems,
-            CRM automation, and intelligent workflows designed to help businesses operate smarter and faster.
+            Explore real-world examples of AI agents — from WhatsApp lead capture to intelligent
+            follow-up systems — designed to help businesses respond faster and convert more leads.
           </p>
         </div>
 
-        {/* Demo Image Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 mb-12 md:mb-16">
           {[
-            { img: "/demos/demo1.png", label: "DEMO 1", title: "WhatsApp AI Chatbot", desc: "AI-powered WhatsApp automation that handles customer support, quote requests, lead capture, and instant replies 24/7." },
-            { img: "/demos/demo2.png", label: "DEMO 2", title: "AI Lead Capture Workflow", desc: "Automatically capture, qualify, and nurture leads using AI, CRM integration, WhatsApp follow-ups, and automated workflows." },
-            { img: "/demos/demo3.png", label: "DEMO 3", title: "Appointment Booking Automation", desc: "Streamline lead management, automate follow-ups, and improve customer relationships with intelligent CRM automation systems." },
+            { img: "/demos/demo1.png", label: "DEMO 1", title: "AIVEXA AutoAgent — WhatsApp Sales Agent", desc: "An AI sales agent that handles customer enquiries, qualifies leads, and replies instantly on WhatsApp — 24/7." },
+            { img: "/demos/demo2.png", label: "DEMO 2", title: "AI Lead Capture & Scoring", desc: "AI agents that capture, score, and nurture leads automatically — connected directly to your CRM and follow-up system." },
+            { img: "/demos/demo3.png", label: "DEMO 3", title: "AI Test Drive & Appointment Booking", desc: "An AI agent that books appointments, manages follow-ups, and keeps your sales pipeline moving without manual admin." },
           ].map((demo, i) => (
             <motion.div
               key={i}
@@ -271,32 +252,31 @@ export default function App() {
           ))}
         </div>
 
-        {/* Workflow Demonstrations */}
         <div className="text-center mb-8 md:mb-12">
-          <p className="text-cyan-400 font-semibold tracking-widest uppercase mb-2 md:mb-3 text-sm">Workflow Demonstrations</p>
+          <p className="text-cyan-400 font-semibold tracking-widest uppercase mb-2 md:mb-3 text-sm">Real AI Agent Use Cases</p>
           <h3 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">
-            Example Automation <span className="text-cyan-400">Systems</span>
+            Example AI Agent <span className="text-cyan-400">Systems</span>
           </h3>
           <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg">
-            Real-world automation systems designed to reduce manual work, improve response times, and increase customer conversions.
+            Real-world AI agent systems designed to reduce manual work, improve response times, and increase customer conversions.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {[
             {
-              icon: "🤖", color: "cyan", title: "AI Customer Support Bot",
-              desc: "Automated website chatbot that instantly answers FAQs, qualifies leads, and books consultations 24/7.",
+              icon: "🤖", color: "cyan", title: "AI Receptionist Agent",
+              desc: "An AI agent that instantly answers FAQs, qualifies leads, and books consultations — 24/7, on your website or WhatsApp.",
               features: ["✅ Instant lead qualification", "✅ WhatsApp integration", "✅ CRM synchronization"],
             },
             {
-              icon: "⚡", color: "purple", title: "Automated Quote Workflow",
-              desc: "Smart workflow that collects customer requirements, generates quotations, and sends automated follow-ups.",
+              icon: "⚡", color: "purple", title: "AI Quote & Follow-Up Agent",
+              desc: "An AI agent that collects customer requirements, generates quotes, and follows up automatically until the deal closes.",
               features: ["✅ Instant quote requests", "✅ Automated email replies", "✅ Lead tracking dashboard"],
             },
             {
               icon: "📈", color: "blue", title: "Social Media AI Assistant",
-              desc: "AI-powered assistant that manages inquiries, captures leads, and automates responses from social media.",
+              desc: "An AI agent that manages inquiries, captures leads, and responds instantly across your social channels.",
               features: ["✅ Facebook automation", "✅ Instagram lead capture", "✅ CRM integrations"],
             },
           ].map((item, i) => (
@@ -312,9 +292,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          TRUST / WHY AIVEXA — PADDING FIXED
-      ══════════════════════════════════════════ */}
+      {/* TRUST / WHY AIVEXA */}
       <section className="relative px-4 md:px-8 py-16 md:py-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
@@ -323,16 +301,16 @@ export default function App() {
               Intelligent AI Systems <span className="text-cyan-400">Built For Growth</span>
             </h2>
             <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-              We help businesses automate repetitive tasks, improve customer response times,
-              and scale operations using powerful AI automation systems.
+              We build AI agents and intelligent business systems that handle repetitive tasks,
+              improve customer response times, and help businesses scale their operations.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { icon: "⚡", color: "cyan", stat: "24/7", title: "Always Running", desc: "AI systems operate around the clock to capture leads, answer questions, and automate business tasks instantly." },
-              { icon: "🤖", color: "purple", stat: "AI", title: "Smart Automation", desc: "Intelligent automation systems designed to save time, improve efficiency, and streamline customer communication." },
-              { icon: "🚀", color: "cyan", stat: "Custom", title: "Tailored Solutions", desc: "Every automation workflow is customized specifically for your business goals, systems, and operational needs." },
+              { icon: "⚡", color: "cyan", stat: "24/7", title: "Always Running", desc: "Your AI agents operate around the clock — capturing leads, answering questions, and responding instantly." },
+              { icon: "🤖", color: "purple", stat: "AI", title: "Smart AI Agents", desc: "Intelligent AI agents designed to save time, improve efficiency, and streamline customer communication." },
+              { icon: "🚀", color: "cyan", stat: "Custom", title: "Tailored Solutions", desc: "Every AI agent is built specifically for your business goals, systems, and operational needs." },
             ].map((card, i) => (
               <motion.div
                 key={i}
@@ -350,29 +328,26 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          SERVICES & PRICING — CARDS FIXED
-      ══════════════════════════════════════════ */}
+      {/* SERVICES & PRICING */}
       <section id="services" className="relative py-16 md:py-24 px-4 md:px-6 bg-[#050816] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4">AI Automation Services</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4">AI Agents & Solutions</h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg">
-              Helping businesses automate customer enquiries, lead generation,
-              follow-ups, and qualification through practical AI automation systems.
+              AI agents and intelligent systems that handle customer enquiries, capture leads,
+              qualify prospects, and follow up automatically.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
 
-            {/* SERVICE 1 */}
             <motion.div whileHover={{ scale: 1.03, y: -10 }} transition={{ duration: 0.3 }}
               className="h-full bg-white/5 border border-white/10 rounded-3xl p-5 md:p-8 backdrop-blur-md shadow-xl">
               <span className="bg-blue-600 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold">SERVICE 1</span>
-              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-cyan-400">Lead Generation Automation Setup</h3>
-              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">Automate lead capture, notifications, follow-ups and lead tracking so no opportunity gets missed.</p>
+              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-cyan-400">AI Lead Capture & Follow-Up Agent</h3>
+              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">An AI agent that captures leads, sends notifications, follows up automatically, and tracks every opportunity so nothing gets missed.</p>
               <ul className="space-y-2 md:space-y-3 text-gray-300 mb-6 md:mb-8 text-sm md:text-base">
-                {["Website Form Automation","WhatsApp Enquiry Automation","Email Enquiry Automation","Google Sheets / CRM Syncing","Lead Routing & Notifications","Automated Follow-Ups"].map((f,i)=><li key={i}>✓ {f}</li>)}
+                {["Website Lead Capture","WhatsApp Lead Capture","Email Lead Capture","Google Sheets / CRM Syncing","Lead Routing & Notifications","AI Follow-Up Sequences"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5 mb-3 md:mb-4">
                 <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Starter</h4>
@@ -385,14 +360,13 @@ export default function App() {
               <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Monthly Retainer: <strong>R1,250/month</strong></div>
             </motion.div>
 
-            {/* SERVICE 2 */}
             <motion.div whileHover={{ scale: 1.03, y: -10 }} transition={{ duration: 0.3 }}
               className="h-full bg-white/5 border border-white/10 rounded-3xl p-5 md:p-8 backdrop-blur-md shadow-xl">
               <span className="bg-purple-600 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold">SERVICE 2</span>
-              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-purple-400">AI Lead Qualification Chatbot</h3>
-              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">AI chatbot that answers questions, qualifies leads and routes opportunities automatically.</p>
+              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-purple-400">AI Sales Qualification Agent</h3>
+              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">An AI agent that answers questions, qualifies leads, and routes hot opportunities to your sales team automatically.</p>
               <ul className="space-y-2 md:space-y-3 text-gray-300 mb-6 md:mb-8 text-sm md:text-base">
-                {["FAQ Automation","Lead Qualification Questions","Contact Capture","Lead Routing","CRM / Google Sheets Integration","Website Chatbot Integration"].map((f,i)=><li key={i}>✓ {f}</li>)}
+                {["Instant FAQ Answers","Lead Qualification Questions","Contact Capture","Lead Routing","CRM / Google Sheets Integration","Website & WhatsApp Integration"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5 mb-3 md:mb-4">
                 <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Basic</h4>
@@ -405,14 +379,13 @@ export default function App() {
               <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Monthly Retainer: <strong>R1,250/month</strong></div>
             </motion.div>
 
-            {/* BUNDLE */}
             <motion.div whileHover={{ scale: 1.03, y: -10 }} transition={{ duration: 0.3 }}
               className="h-full bg-cyan-500/10 border-2 border-cyan-400 rounded-3xl p-5 md:p-8 backdrop-blur-md shadow-xl">
               <span className="bg-cyan-400 text-black px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold">BUNDLE OPTION</span>
-              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-cyan-400">AIVEXA Lead Conversion System</h3>
-              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">Combine both services into one complete lead conversion workflow.</p>
+              <h3 className="text-xl md:text-2xl font-bold mt-4 md:mt-5 mb-3 md:mb-4 text-cyan-400">AIVEXA AutoAgent — Complete Lead Conversion System</h3>
+              <p className="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">The complete AIVEXA AutoAgent system — combining lead capture and AI qualification into one end-to-end conversion engine.</p>
               <ul className="space-y-2 md:space-y-3 text-gray-300 mb-6 md:mb-8 text-sm md:text-base">
-                {["Everything in Service 1","Everything in Service 2","Lead Capture + Qualification","CRM / Google Sheets Syncing","Follow-Up Automation","Higher Conversion Potential"].map((f,i)=><li key={i}>✓ {f}</li>)}
+                {["Everything in Service 1","Everything in Service 2","Lead Capture + Qualification","CRM / Google Sheets Syncing","Automated AI Follow-Ups","Higher Conversion Potential"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5">
                 <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Bundle Price</h4>
@@ -424,9 +397,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          HOW IT WORKS — PADDING & CARDS FIXED
-      ══════════════════════════════════════════ */}
+      {/* HOW IT WORKS */}
       <section className="relative px-4 md:px-8 py-20 md:py-24 bg-gradient-to-b from-black/10 to-black/30 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-cyan-500/10 blur-[160px] rounded-full"></div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -434,15 +405,15 @@ export default function App() {
             <p className="text-cyan-400 uppercase tracking-[2px] md:tracking-[4px] font-semibold mb-3 md:mb-4 text-sm">Simple Process</p>
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-4 md:mb-6">How It <span className="text-cyan-400">Works</span></h2>
             <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-              Our automation process is designed to be fast, efficient, and tailored specifically to your business operations.
+              Our process is designed to be fast, efficient, and tailored specifically to your business operations.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             {[
-              { n:"01", icon:"📞", color:"cyan", title:"Consultation", desc:"We analyse your business operations and identify the best automation opportunities to improve efficiency and growth." },
-              { n:"02", icon:"⚙️", color:"purple", title:"System Build", desc:"We build intelligent AI workflows and automation systems customised specifically for your business needs." },
-              { n:"03", icon:"🚀", color:"cyan", title:"Launch & Scale", desc:"Your automation systems go live and immediately begin saving time, increasing efficiency, and generating results." },
+              { n:"01", icon:"📞", color:"cyan", title:"Consultation", desc:"We analyse your business operations and identify where AI agents can save you the most time and convert more leads." },
+              { n:"02", icon:"⚙️", color:"purple", title:"System Build", desc:"We build your AI agent — customised specifically for your business, your customers, and your sales process." },
+              { n:"03", icon:"🚀", color:"cyan", title:"Launch & Scale", desc:"Your AI agent goes live and immediately starts capturing leads, saving time, and generating results." },
             ].map((step,i)=>(
               <motion.div key={i} whileHover={{ y: -10, scale: 1.03 }} transition={{ duration: 0.3 }}
                 className={`relative bg-white/5 border border-${step.color}-500/20 rounded-3xl p-6 md:p-10 backdrop-blur-xl overflow-hidden hover:border-${step.color}-400 shadow-[0_0_50px_rgba(0,255,255,0.08)]`}>
@@ -456,9 +427,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          FOUNDER / ABOUT — PADDING & IMAGE FIXED
-      ══════════════════════════════════════════ */}
+      {/* FOUNDER / ABOUT */}
       <section id="about" className="relative px-4 md:px-8 py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5" />
         <div className="max-w-6xl mx-auto relative z-10">
@@ -495,7 +464,7 @@ export default function App() {
                 <p>My name is Devan, and I founded AIVEXA from a simple but powerful realisation — most businesses are drowning in manual work they don't have to do.</p>
                 <p>Before AIVEXA, I spent years in the office automation industry, working closely with businesses across various operations. I watched talented teams waste hours every day on repetitive tasks, missed leads, and slow communication processes that technology could solve in minutes.</p>
                 <p>I started AIVEXA because I knew I had more to offer. Not just to the businesses I work with — but to myself. I believed there was a better way to create real, measurable impact beyond the limits of a traditional career.</p>
-                <p>AIVEXA was built on one core belief — that businesses deserve smarter systems. Systems that work around the clock, reduce operational drag, and free up the people inside those businesses to focus on what truly matters.</p>
+                <p>AIVEXA was built on one core belief — that businesses deserve smarter systems. AI agents that work around the clock, reduce operational drag, and free up the people inside those businesses to focus on what truly matters.</p>
                 <p className="text-cyan-300 font-medium">Based in Port Elizabeth, South Africa — AIVEXA is built for businesses that are ready to stop working harder and start working smarter.</p>
               </div>
               <div className="mt-6 md:mt-8">
@@ -509,9 +478,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          FAQ — PADDING FIXED
-      ══════════════════════════════════════════ */}
+      {/* FAQ */}
       <section id="faq" className="relative px-4 md:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10 md:mb-16">
@@ -519,14 +486,14 @@ export default function App() {
           </div>
           <div className="space-y-4 md:space-y-5">
             {[
-              { q: "What businesses can benefit from AI automation?", a: "Almost any business can automate repetitive tasks, lead generation, customer support, and workflows. We work especially well with admin-heavy businesses, service providers, and companies that handle high volumes of customer communication." },
-              { q: "Do you build custom AI systems?", a: "Yes. Every automation solution is designed around your specific business requirements, goals, and existing tools." },
-              { q: "Can you automate WhatsApp?", a: "Yes. We build WhatsApp automation systems for communication, bookings, lead management, and customer support." },
-              { q: "How long does setup take?", a: "Most automation systems are built and live within 7–14 business days depending on complexity. We'll give you a clear timeline during your free consultation." },
-              { q: "What tools do you use?", a: "We primarily use Make.com, Zapier, GoHighLevel, and WhatsApp APIs to build automation systems. We always recommend the best tool for your specific needs." },
+              { q: "What businesses can benefit from AI agents?", a: "Almost any business can benefit from AI agents — for lead generation, customer support, and handling repetitive tasks. We work especially well with admin-heavy businesses, service providers, and companies that handle high volumes of customer communication." },
+              { q: "Do you build custom AI systems?", a: "Yes. Every AI agent is designed around your specific business requirements, goals, and existing tools." },
+              { q: "Can your AI agents work on WhatsApp?", a: "Yes. Our AI agents run natively on WhatsApp — handling customer communication, bookings, lead management, and support." },
+              { q: "How long does setup take?", a: "Most AI agent systems are built and live within 7–14 business days depending on complexity. We'll give you a clear timeline during your free consultation." },
+              { q: "What tools do you use?", a: "We build on a modern, fully-owned tech stack — including the Anthropic Claude AI platform, WhatsApp Business APIs, and custom-built infrastructure — rather than relying on no-code platforms. This gives you a faster, more reliable, and fully owned system." },
               { q: "Do I need technical knowledge to use the systems?", a: "Not at all. We build, set up, and hand over everything fully operational. We also provide guidance so you can manage it confidently without any technical background." },
-              { q: "Do you offer ongoing support after setup?", a: "Yes. We offer monthly retainer packages that include system monitoring, updates, optimisation, and ongoing support so your automation keeps running at its best." },
-              { q: "How much can automation save my business?", a: "Most clients reclaim 10–20+ hours per week in admin time alone. Beyond time, faster lead response and automated follow-ups directly improve conversion rates and revenue." },
+              { q: "Do you offer ongoing support after setup?", a: "Yes. We offer monthly retainer packages that include system monitoring, updates, optimisation, and ongoing support so your AI agent keeps running at its best." },
+              { q: "How much value can AI agents add to my business?", a: "Most clients reclaim 10–20+ hours per week in admin time alone. Beyond time, faster lead response and AI-driven follow-ups directly improve conversion rates and revenue." },
             ].map((faq, index) => (
               <div key={index} className="bg-white/5 border border-white/10 rounded-2xl p-5 md:p-6 hover:border-cyan-500 transition duration-300">
                 <h3 className="text-base md:text-xl font-semibold text-cyan-400 mb-2 md:mb-3">{faq.q}</h3>
@@ -537,12 +504,10 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          CONTACT — HEADING SIZE FIXED
-      ══════════════════════════════════════════ */}
+      {/* CONTACT */}
       <section id="contact" className="relative px-4 md:px-8 py-16 md:py-24 bg-black/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">Ready To Automate Your Business?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">Ready To Put AI Agents To Work For Your Business?</h2>
           <p className="text-gray-400 text-base md:text-lg mb-8 md:mb-10">Let's build intelligent systems that save time and grow your business.</p>
           <a href="https://tally.so/r/44A1Zk" target="_blank" rel="noopener noreferrer"
             className="inline-block bg-cyan-500 hover:bg-cyan-400 transition duration-300 px-8 md:px-10 py-4 md:py-5 rounded-xl font-semibold text-black shadow-[0_0_30px_rgba(0,255,255,0.3)] text-sm md:text-base">
@@ -551,15 +516,13 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          FOOTER — MOBILE OPTIMIZED
-      ══════════════════════════════════════════ */}
+      {/* FOOTER */}
       <footer className="relative border-t border-white/10 bg-black/30 backdrop-blur-xl mt-16 md:mt-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">AIVEXA</h2>
-              <p className="text-gray-400 mt-3 md:mt-4 leading-relaxed text-sm md:text-base">AI automation systems designed to help businesses scale faster, automate conversations, generate leads, and improve customer experience.</p>
+              <p className="text-gray-400 mt-3 md:mt-4 leading-relaxed text-sm md:text-base">AI agents and intelligent business systems designed to help businesses convert more leads, respond faster, and scale smarter.</p>
               <div className="flex flex-wrap gap-3 md:gap-4 mt-5 md:mt-6">
                 {[
                   { href: "https://linkedin.com/company/officialaivexa", path: "M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.3V24h-4v-7.4c0-1.8 0-4.1-2.5-4.1s-2.9 1.9-2.9 4V24h-4V8z" },
@@ -580,7 +543,7 @@ export default function App() {
             <div>
               <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Quick Links</h3>
               <div className="flex flex-col gap-3 md:gap-4 text-gray-400 text-sm md:text-base">
-                {[["#services","Services"],["#about","About"],["#contact","Contact"],["/privacy","Privacy Policy"],["/terms","Terms of Service"]].map(([href,label],i)=>(
+                {[["#services","AI Agents"],["#about","About"],["#contact","Contact"],["/privacy","Privacy Policy"],["/terms","Terms of Service"]].map(([href,label],i)=>(
                   <a key={i} href={href} className="hover:text-cyan-400 transition">{label}</a>
                 ))}
               </div>
@@ -604,7 +567,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* ── WHATSAPP FLOATING BUTTON ── */}
+      {/* WHATSAPP FLOATING BUTTON */}
       <a href="https://wa.me/27698585902" target="_blank" rel="noopener noreferrer"
         className="fixed bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-400 text-white p-3.5 md:p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-6 h-6 md:w-8 md:h-8 fill-current">
@@ -613,14 +576,14 @@ export default function App() {
         </svg>
       </a>
 
-      {/* ── IMAGE POPUP ── */}
+      {/* IMAGE POPUP */}
       {selectedImage !== "" && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4 md:p-6" onClick={() => setSelectedImage("")}>
           <img src={selectedImage} alt="Expanded Demo" className="max-w-full max-h-full rounded-2xl" />
         </div>
       )}
-<CookieConsent />
-          </div>
-          
+
+      <CookieConsent />
+    </div>
   );
 }
