@@ -556,7 +556,7 @@ export default function App() {
             <div>
               <h3 className="text-lg md:text-xl font-semibold mb-4 md:mb-6">Contact</h3>
               <div className="flex flex-col gap-3 md:gap-4 text-gray-400 text-sm md:text-base">
-                <a href="mailto:info@aivexasolutions.com" className="hover:text-cyan-400 transition break-all">info@aivexasolutions.com</a>
+                <a href="mailto:officialaivexa@outlook.com" className="hover:text-cyan-400 transition break-all">officialaivexa@outlook.com</a>
                 <a href="https://wa.me/27698585902" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">WhatsApp: +27 69 858 5902</a>
                 <a href="https://linkedin.com/company/officialaivexa" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">LinkedIn: Officialaivexa</a>
                 <p className="text-gray-500 text-xs md:text-sm">Cape Town, South Africa</p>
