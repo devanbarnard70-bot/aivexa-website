@@ -350,14 +350,14 @@ export default function App() {
                 {["Website Lead Capture","WhatsApp Lead Capture","Email Lead Capture","Google Sheets / CRM Syncing","Lead Routing & Notifications","AI Follow-Up Sequences"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5 mb-3 md:mb-4">
-                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Starter</h4>
-                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R2,500</p>
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Setup Fee From (Once-Off)</h4>
+                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R4,000</p>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5">
-                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Growth</h4>
-                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R5,000</p>
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Monthly Subscription</h4>
+                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R2,000</p>
               </div>
-              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Monthly Retainer: <strong>R1,250/month</strong></div>
+              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Billed Monthly: <strong>R2,000/month</strong></div>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.03, y: -10 }} transition={{ duration: 0.3 }}
@@ -369,14 +369,14 @@ export default function App() {
                 {["Instant FAQ Answers","Lead Qualification Questions","Contact Capture","Lead Routing","CRM / Google Sheets Integration","Website & WhatsApp Integration"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5 mb-3 md:mb-4">
-                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Basic</h4>
-                <p className="text-3xl md:text-4xl font-bold text-purple-400">R3,500</p>
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Setup Fee From (Once-Off)</h4>
+                <p className="text-3xl md:text-4xl font-bold text-purple-400">R5,000</p>
               </div>
               <div className="bg-white/5 rounded-2xl p-4 md:p-5">
-                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Growth</h4>
-                <p className="text-3xl md:text-4xl font-bold text-purple-400">R6,000</p>
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Monthly Subscription</h4>
+                <p className="text-3xl md:text-4xl font-bold text-purple-400">R2,500</p>
               </div>
-              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Monthly Retainer: <strong>R1,250/month</strong></div>
+              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Billed Monthly: <strong>R2,500/month</strong></div>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.03, y: -10 }} transition={{ duration: 0.3 }}
@@ -387,11 +387,15 @@ export default function App() {
               <ul className="space-y-2 md:space-y-3 text-gray-300 mb-6 md:mb-8 text-sm md:text-base">
                 {["Everything in Service 1","Everything in Service 2","Lead Capture + Qualification","CRM / Google Sheets Syncing","Automated AI Follow-Ups","Higher Conversion Potential"].map((f,i)=><li key={i}>✓ {f}</li>)}
               </ul>
-              <div className="bg-white/5 rounded-2xl p-4 md:p-5">
-                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Bundle Price</h4>
-                <p className="text-2xl md:text-4xl font-bold text-cyan-400">R5,000 – R6,000</p>
+              <div className="bg-white/5 rounded-2xl p-4 md:p-5 mb-3 md:mb-4">
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Setup Fee From (Once-Off)</h4>
+                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R8,000</p>
               </div>
-              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Monthly Retainer: <strong>R1,250/month</strong></div>
+              <div className="bg-white/5 rounded-2xl p-4 md:p-5">
+                <h4 className="text-gray-400 mb-1 md:mb-2 text-sm">Monthly Subscription</h4>
+                <p className="text-3xl md:text-4xl font-bold text-cyan-400">R4,000</p>
+              </div>
+              <div className="border-t border-white/10 mt-5 md:mt-6 pt-5 md:pt-6 text-gray-300 text-sm md:text-base">Billed Monthly: <strong>R4,000/month</strong></div>
             </motion.div>
           </div>
         </div>
